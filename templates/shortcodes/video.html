@@ -1,0 +1,10 @@
+{% import "scale_macros.html" as macros %}
+
+{% if scale is not defined %}
+    {% set_global scale = "1" %}
+{% endif %}
+
+<video class="{{macros::frac_to_class(frac=scale)}}" controls>
+  <source src="{{path}}" type="video/mp4">
+  Your browser is not supporting video.
+</video>

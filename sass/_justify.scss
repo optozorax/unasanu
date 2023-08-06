@@ -1,0 +1,15 @@
+@mixin justify {
+	@include large { text-align: justify; }
+    @include medium { text-align: justify; }
+    @include small { @-moz-document url-prefix() { text-align: justify; } }
+
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+    -moz-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-lines: 2; 
+    -ms-hyphenate-limit-lines: 2;
+    hyphenate-limit-lines: 2;
+}

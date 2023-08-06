@@ -1,0 +1,39 @@
+.main-content pre code {
+  @include medium-large {
+    .table { display: table; }
+    .tr { display: table-row; }
+    .td { display: table-cell; }
+    .td:last-child {
+      text-indent: -20px;
+      padding-left: 25px;
+    }
+    .no-copy {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    .hidden-copy {
+      width: 0px !important;
+      height: 0px !important;
+      font-size: 0px !important;
+    }
+  
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  @include small {
+    .hidden-copy {
+      display: none;
+    }
+  }
+}

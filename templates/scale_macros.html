@@ -1,0 +1,35 @@
+{%- macro frac_to_class(frac) -%}
+  {%- if frac == "1" -%}
+      img-one
+  {%- elif frac == "3/4" -%}
+      img-three-four
+  {%- elif frac == "1/2" -%}
+      img-one-two
+  {%- elif frac == "1/4" -%}
+      img-one-four
+  {%- elif frac == "2/3" -%}
+      img-two-three
+  {%- elif frac == "1/3" -%}
+      img-one-three
+  {%- else -%}
+      img-one
+  {%- endif -%}
+{%- endmacro frac_to_class -%}
+
+{%- macro frac_to_number(frac) -%}
+  {%- if frac == "1" -%}
+      1.0
+  {%- elif frac == "3/4" -%}
+      0.75
+  {%- elif frac == "1/2" -%}
+      0.5
+  {%- elif frac == "1/4" -%}
+      0.25
+  {%- elif frac == "2/3" -%}
+      0.666666666666666
+  {%- elif frac == "1/3" -%}
+      0.333333333333333
+  {%- else -%}
+      1.0
+  {%- endif -%}
+{%- endmacro frac_to_number -%}

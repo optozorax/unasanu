@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block social_metatags %}
+{% set image = section.permalink ~ section.extra.image %}
+<meta name="author" content="{{config.extra.author}}">
+<meta name="title" content="{{section.title}}">
+<meta name="description" content="{{section.description}}">
+<meta name="image" content="{{image|safe}}">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="{{section.permalink | safe}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{section.title}}">
+<meta property="og:description" content="{{section.description}}">
+<meta property="og:image" content="{{image|safe}}">
+<meta property="og:locale" content="{{lang}}">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="{{config.extra.domain}}">
+<meta property="twitter:url" content="{{section.permalink | safe}}">
+<meta name="twitter:title" content="{{section.title}}">
+<meta name="twitter:description" content="{{section.description}}">
+<meta name="twitter:image" content="{{image|safe}}">
+<meta name="twitter:creator" content="{{config.extra.twitter_creator_username}}">
+{% endblock social_metatags %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block page_header %}
+<h1 class="project-name" style="font-size: 30pt;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+  <style>.alive { fill: white; }</style>
+  <g transform="scale(0.5)">
+  <rect class="alive" x="20" y="0" width="20" height="20"/>
+  <rect class="alive" x="0" y="40" width="20" height="20"/>
+  <rect class="alive" x="20" y="40" width="20" height="20"/>
+  <rect class="alive" x="40" y="20" width="20" height="20"/>
+  <rect class="alive" x="40" y="40" width="20" height="20"/>
+  </g>
+</svg>
+</h1>
+{% endblock page_header %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block content %}
+<div class="index">
+{% for post in section.pages | sort(attribute="extra.position") %}
+  <table>
+    <tr>
+      <td class="first">
+        <a href="/{{ post.permalink | trim_start_matches(pat=config.base_url) }}" title="{{ post.title }}">
+          {% set image = post.permalink ~ post.extra.language_flag | trim_start_matches(pat=config.base_url) %}
+          {% set new_image = resize_image(path=image, width=200, height=200, op="fit", format="webp") %}
+          {% if image is ending_with(".gif") %}
+            <img src="/{{ image | trim_start_matches(pat=config.base_url) }}"
+              width="{{ new_image.width }}" height="{{ new_image.height }}">
+          {% else %}
+            <img src="/{{ new_image.url | trim_start_matches(pat=config.base_url) }}"
+              width="{{ new_image.width }}" height="{{ new_image.height }}">
+          {% endif %}
+        </a>
+      </td>
+      <td class="second">
+        <h2>
+          <a class="post-link" href="/{{ post.permalink | trim_start_matches(pat=config.base_url) | safe }}" title="{{ post.title }}">
+            {{ post.extra.language | safe }}
+          </a>
+        </h2>
+      </td>
+    </tr>
+  </table>
+  {% if not loop.last %}
+  <hr>
+  {% endif %}
+{% endfor %}
+</div>
+{% endblock content %}
+
+{% block footer %}
+<footer class="site-footer section second-section">
+    <center>
+    <a href="https://github.com/optozorax/unasanu" title="GitHub source code of that site"><img class="my-svg-icon" src="/ico/github.svg" width="24" height="24"></a>
+    </center>
+  </footer>
+{% endblock footer %}

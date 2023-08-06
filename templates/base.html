@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="{% if page.translation.lang %}{{ page.translation.lang }}{% else %}{{lang}}{% endif %}">
+
+<head>
+  <!-- Fonts preload -->
+  <link rel="preload" as="font" href="/fonts/Rubik/iJWKBXyIfDnIV7nFrXyi0A.woff2" crossOrigin="anonymous">
+  <link rel="preload" as="font" href="/fonts/Rubik/iJWKBXyIfDnIV7nBrXw.woff2" crossOrigin="anonymous">
+  <link rel="preload" as="font" href="/fonts/JetBrainsMono/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2" crossOrigin="anonymous">
+  <link rel="preload" as="font" href="/fonts/JetBrainsMono/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2" crossOrigin="anonymous">
+  <!-- --- -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/main.css">
+  <!-- --- -->
+
+  <!-- Non social metatags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="canonical" href="{{config.base_url | safe}}">
+  <meta name="robots" content="noarchive">
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/atom.xml"> 
+  <!-- --- -->
+
+  <!-- Extra head declarations -->
+  {% block extra_head %}
+  {% endblock extra_head %}
+  <!-- --- -->
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff">
+  <!-- --- -->
+
+  <title>{% block title %}{{ config.title | safe }}{% endblock title %}</title>
+</head>
+
+<body>
+  <!-- FullScreen block -->
+  <div id="img_modal" class="modal" style="display: none;">
+    <img id="img_modal_01" src="/ico/loading.gif">
+    <span class="close" id="img_modal_close">&times;</span>
+  </div>
+  <!-- --- -->
+
+  {% block before_site_header %}
+  {% endblock before_site_header %}
+  <header class="site-header" role="banner">
+  {% block site_header %}
+  <div class="wrapper">
+    <a class="site-title" href="/">{{ config.title | safe }}</a>
+  </div>
+  {% endblock site_header %}
+  </header>
+  {% block after_site_header %}
+  {% endblock after_site_header %}
+
+  {% block before_page_header %}
+  {% endblock before_page_header %}
+  <section class="page-header">
+  {% block page_header %}
+  {% endblock page_header %}
+  </section>
+  {% block after_page_header %}
+  {% endblock after_page_header %}
+
+  {% block before_content %}
+  {% endblock before_content %}
+  <section class="main-content section">
+  {% block content %}
+  {% endblock content %}
+  </section>
+  {% block after_content %}
+  {% endblock after_content %}
+
+  <hr class="enabled-on-phone">
+
+  {% block before_site_footer %}
+  {% endblock before_site_footer %}
+  
+  {% block footer %}
+  {% endblock footer %}
+
+  {% block after_site_footer %}
+  {% endblock after_site_footer %}
+
+  {% if config.mode == "Serve" and config.extra.show_debug %}
+  <hr style="border-top: 2px dashed #606c71; margin: 20px;">
+  <div class="section second-section">
+  <center><h1>DEBUG INFO</h1></center>
+  <code><pre>
+  {{__tera_context | escape_xml | safe}}
+  </pre></code>
+  </div>
+  {% endif %}
+</body>
+</html>

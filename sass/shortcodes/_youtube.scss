@@ -1,0 +1,109 @@
+.yt-title-wrapper {
+	position: absolute;
+	top: 6%;
+	width: 100%;
+	max-width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.yt-title {
+	display: block;
+	max-width: 100%;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis; 
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+
+}
+
+.yt-button {
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 68px;
+	height: 48px;
+	margin-left: -34px;
+	margin-top: -24px;
+	z-index: 63;
+}
+
+.yt-button-inner {
+	fill: #000;
+	fill-opacity: 0.5;
+	transition: fill .1s cubic-bezier(0,0,0.2,1),fill-opacity .1s cubic-bezier(0,0,0.2,1);
+}
+
+.yt-container:hover .yt-button-inner {
+	fill: #f00 !important;
+	fill-opacity: 1.0;
+}
+
+.yt-container {
+	background-color: #000;
+	position: relative;
+	z-index: 2;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 1rem;
+
+	width: 560px;
+	max-width: 100%;
+	height: auto;
+
+	a {
+		color: white;
+	}
+}
+
+.yt-image {
+	width: 100%;
+	height: 100%;
+}
+
+.yt-image-wrapper {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+
+.yt-image-wrapper:after {
+	content: '';
+	position: absolute;
+	top: 0; right: 0;
+	bottom: 0; left: 0;
+	box-shadow: inset 0px 100px 80px -10px rgba(black, 0.8);
+}
+
+.yt-duration {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 3px;
+  padding: 5px 6px;
+  font-size: 20px;
+}
+
+.yt-timecode {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 3px;
+  padding: 5px 6px;
+  font-size: 20px;
+}
+
+.yt-text {
+	color: white;
+	font-weight: bold;
+}

@@ -1,0 +1,40 @@
+.section {
+  word-wrap: break-word;
+  font-size: $base-font-size;
+
+  @include large {
+    max-width: 55rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+  }
+
+  @include medium {
+    padding: 1rem 1rem;
+    width: 100vw;
+  }
+
+  @include small {
+    padding: 1rem 1rem;
+    width: 100vw;
+  }
+}
+
+.second-section {
+  @include large {
+    margin-top: 1rem;
+  }
+}
+
+hr.enabled-on-phone {
+  width: 95%;
+  height: 1px;
+  padding: 0;
+  margin: 1rem auto 1rem auto;
+  background-color: #eff0f1;
+  border: 0;
+}
+
+@include large { hr.enabled-on-phone { display: none; } }
+@include medium { hr.enabled-on-phone { display: block; } }
+@include small { hr.enabled-on-phone { display: block; } }

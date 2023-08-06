@@ -1,0 +1,25 @@
+base_url = "https://unasanu.xyz/"
+title = "unasanu.xyz"
+description = "unasanu"
+default_language = "en"
+output_dir = "docs"
+compile_sass = true
+minify_html = true
+generate_feed = false
+taxonomies = [
+	{name = "tags"},
+]
+build_search_index = false
+ignored_content = ["static/youtube/*.json"]
+
+[markdown]
+highlight_code = true
+highlight_theme = "cheerfully-light"
+
+[extra]
+name = "unasanu.xyz"
+domain = "unasanu.xyz"
+author = "optozorax"
+header_paths = []
+header_titles = []
+show_debug = false

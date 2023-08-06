@@ -1,0 +1,31 @@
+.pros li {
+	list-style: none;
+	text-indent: -17px;
+}
+
+.pros li::before {
+  content: ' ';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-image: url('/ico/green_plus.svg');
+  background-size: contain;
+  margin-right: 5px;
+  transform: translateX(-2px);
+}
+
+.cons li {
+	list-style: none;
+	text-indent: -17px;
+}
+
+.cons li::before {
+  content: ' ';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-image: url('/ico/red_minus.svg');
+  background-size: contain;
+  margin-right: 5px;
+  transform: translateX(-2px);
+}

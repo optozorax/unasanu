@@ -1,0 +1,145 @@
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hide the images by default */
+.gallery-slide {
+  display: none;
+  padding: 0px;
+  font-size: 0;
+}
+
+/* Next & previous buttons */
+.gallery-prev,
+.gallery-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+/* Position the "next button" to the right */
+.gallery-next {
+  right: 0;
+}
+
+.gallery-prev {
+  border-radius: 0 5px 5px 0;
+}
+
+.gallery-next {
+  border-radius: 5px 0 0 5px;
+}
+
+@include large {
+  .gallery-next, .fullscreen {
+    margin-right: -2rem;
+  }
+  .gallery-prev, .numbertext {
+    margin-left: -2rem;
+  }
+}
+
+@include medium-small {
+  .gallery-prev {
+    margin-left: -1rem;
+  }
+  .gallery-next {
+    margin-right: -1rem;
+  }
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallery-prev:hover,
+.gallery-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Number text (1/3 etc) */
+.gallery-text {
+  max-width: 300px;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  z-index: 2;
+  border: 1px solid rgba(#fff, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.gallery-column {
+  float: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0;
+  padding: 3px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.gallery-demo {
+  border-radius: 3px;
+  opacity: 0.6;
+  cursor: pointer;
+  width: 100%;
+}
+
+.gallery-active,
+.gallery-demo:hover {
+  opacity: 1;
+  box-shadow: 0 0 0 2px $header-bg-color;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+.gallery-svg {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.gallery-row {
+  margin-bottom: 1rem;
+}

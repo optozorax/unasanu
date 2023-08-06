@@ -1,0 +1,30 @@
+{% import "scale_macros.html" as macros %}
+
+{% if scale is not defined %}
+    {% set_global scale = 1 %}
+{% endif %}
+{% if format is not defined %}
+    {% set_global format = "webp" %}
+{% endif %}
+{% set class = macros::frac_to_class(frac=scale) %}
+
+{% set scale = macros::frac_to_number(frac=scale) | float %}
+{% set size = 1280 * scale | int %}
+{% set new_image = resize_image(path=page.path ~ path, width=size, height=size, op="fit", format=format, quality=75) %}
+{% set path1 = new_image.static_path | trim_start_matches(pat="static") %}
+
+<div class="magnifier-container {{class}}">
+<img
+    class="not-default full-screen-img"
+    width="{{new_image.width}}"
+    height="{{new_image.height}}"
+    src="{{path1}}" 
+    onclick="full_screen('{{path}}')"
+    onauxclick="full_screen_new_page('{{path}}')">
+<div class="magnifier-display">
+<img class="magnifier" src="/ico/magnifier.svg">
+{%- set meta = get_image_metadata(path=page.path ~ path) -%}
+{%- set actual_scale = meta.width / new_image.width | round(method="ceil", precision=1) -%}
+<div class="magnifier-info">×{{actual_scale}}<br>{{meta.format}}</div>
+</div>
+</div>

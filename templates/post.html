@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block title %}{{page.title}}{% endblock title %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block before_site_header %}
+{% if page.toc | length > 0 %}
+<table class="toc-aligmenter"><tr><td>
+{% endif %}
+{% endblock before_site_header %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block after_site_header %}
+{% if page.toc | length > 0 %}
+</td><td>
+</td></tr></table>
+{% endif %}
+{% endblock after_site_header %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block before_site_footer %}
+{% if page.toc | length > 0 %}
+<table class="toc-aligmenter"><tr><td>
+{% endif %}
+{% endblock before_site_footer %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block after_site_footer %}
+{% if page.toc | length > 0 %}
+</td><td>
+</td></tr></table>
+{% endif %}
+{% endblock after_site_footer %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block extra_head %}
+<script type="text/javascript" src="/js/hammer.min.js"></script>
+<script type="text/javascript" src="/js/toc.js"></script>
+<script type="text/javascript" src="/js/gallery.js"></script>
+<script type="text/javascript" src="/js/full_screen.js"></script>
+<script type="text/javascript" src="/js/word_wrap.js"></script>
+{% endblock extra_head %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block page_header %}
+{% if page.toc | length > 0 %}
+<table class="toc-aligmenter"><tr><td class="page-header-first">
+{% endif %}
+
+<h1 class="project-name">{{page.title}}</h1>
+{% if page.description %}
+<h2 class="project-tagline">{{page.description}}</h2>
+{% endif %}
+
+<center>
+<table style="margin-top: 8px;">
+<tr>
+
+{% if page.date %}
+<td style="padding-right: 10px; border-right: 0px solid #ffffff;">
+<h2 class="project-date" style="margin-top: 0px;">
+  <time datetime="{{ page.date | date(format="%F") }}" itemprop="datePublished">
+    <span class="post-date">{{ page.extra.date_text }}</span>
+  </time>
+</h2>
+</td>
+<td style="padding-right: 10px; border-right: 0px solid #ffffff;">
+<h2 class="project-date" style="margin-top: 0px;">
+    <span class="post-date" style="font-style: normal">| 🕑 {{ page.reading_time }} {{ page.extra.minutes_text }}</span>
+</h2>
+</td>
+{% endif %}
+
+</tr>
+</table>
+</center>
+
+{% if page.toc | length > 0 %}
+</td><td>
+</td></tr></table>
+{% endif %}
+
+{% endblock page_header %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block content %}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+<div itemprop="articleBody" id="content">
+{{ page.content | safe }}
+</div>
+</article>
+{% endblock content %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block before_content %}
+{% if page.toc | length > 0 %}
+<table class="toc-aligmenter"><tr><td>
+{% endif %}
+{% endblock before_content %}
+
+{# -------------------------------------------------------------------------------------------------------- #}
+{% block after_content %}
+{% if page.toc | length > 0 %}
+</td><td>
+<!-- TOC -->
+<input type="checkbox" id="toc-trigger" class="toc-trigger" />
+<label for="toc-trigger">
+  <span class="menu-icon">
+    <div class="side-button"><img src="/ico/right.svg"></div>
+  </span>
+</label>
+
+<nav class="section-nav">
+ <h2>{{page.extra.toc_text}}</h2>
+ <ul class="first">
+ {% for h1 in page.toc %}
+ {% set url = h1.permalink | trim_start_matches(pat=current_url) | safe %}
+  <li>
+   <a href="{{url}}">{{ h1.title }}</a>
+   {% if h1.children %}
+    <ul class="second">
+     {% for h2 in h1.children %}
+      {% set url = h2.permalink | trim_start_matches(pat=current_url) | safe %}
+      <li>
+       <a href="{{url}}">{{ h2.title }}</a>
+       {% if h2.children %}
+       <ul class="third">
+        {% for h3 in h2.children %}
+         {% set url = h3.permalink | trim_start_matches(pat=current_url) | safe %}
+         <li>
+          <a href="{{url}}">{{ h3.title }}</a>
+          {% if h3.children %}
+          <ul class="fourth">
+           {% for h4 in h3.children %}
+            {% set url = h4.permalink | trim_start_matches(pat=current_url) | safe %}
+            <li>
+             <a href="{{url}}">{{ h4.title }}</a>
+             {% if h4.children %}
+             <ul class="fifth">
+              {% for h5 in h4.children %}
+               {% set url = h5.permalink | trim_start_matches(pat=current_url) | safe %}
+               <li>
+                <a href="{{url}}">{{ h5.title }}</a>
+                {% if h5.children %}
+                <ul class="fifth">
+                 {% for h6 in h5.children %}
+                  {% set url = h6.permalink | trim_start_matches(pat=current_url) | safe %}
+                  <li>
+                   <a href="{{url}}">{{ h6.title }}</a>
+                  </li>
+                 {% endfor %}
+                </ul>
+                {% endif %}
+               </li>
+              {% endfor %}
+             </ul>
+             {% endif %}
+            </li>
+           {% endfor %}
+          </ul>
+          {% endif %}
+         </li>
+        {% endfor %}
+       </ul>
+       {% endif %}
+      </li>
+     {% endfor %}
+    </ul>
+   {% endif %}
+  </li>
+ {% endfor %}
+ </ul>
+</nav>
+</td></tr></table>
+{% endif %}
+
+{% endblock after_content %}
+
+{% block footer %}
+  <footer class="site-footer section second-section">
+    <center>
+    © {{page.extra.author_name}}. {{page.extra.license_word}}: <a href="https://creativecommons.org/licenses/by/3.0/deed.{{page.extra.lang}}">CC-BY</a>.
+    </center>
+  </footer>
+{% endblock footer %}

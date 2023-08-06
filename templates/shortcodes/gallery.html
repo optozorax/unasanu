@@ -1,0 +1,80 @@
+{% set len = images | length %}
+
+{% set format = format | default(value="webp") %}
+
+<!-- Calculate max height to have consistent size for each element -->
+{% set max_height = 0 %}
+{% for image in images %}
+  {% set meta = get_image_metadata(path=page.path ~ image) %}
+  {% set height = meta.height / meta.width %}
+  {% if height > max_height %}
+    {% set_global max_height = height %}
+  {% endif %}
+{% endfor %}
+{% set max_height = max_height + 0.01 %}
+
+<div class="gallery-container">
+
+{% set processed_images = [] %}
+{% set processed_width = [] %}
+{% set processed_height = [] %}
+{% for image in images %}
+  {% set new_image = resize_image(path=page.path ~ image, width=1280, height=1280, op="fit", format=format, quality=75) %}
+  {% set path = new_image.static_path| trim_start_matches(pat="static") %}
+
+  {% set_global processed_images = processed_images | concat(with=path) %}
+  {% set_global processed_width = processed_width | concat(with=new_image.width) %}
+  {% set_global processed_height = processed_height | concat(with=new_image.height) %}
+{% endfor %}
+
+<!-- Images -->
+{% for image in processed_images %}
+<div class="gallery-slide" id="{{ "slide_" ~ nth ~ "_" ~ loop.index0 }}" {% if loop.first %}style="display:block;"{% endif %}>
+  {% set meta = get_image_metadata(path=page.path ~ images[loop.index0]) %}
+  {% set height = (max_height - meta.height / meta.width) / 2 %}
+
+  <div class="gallery-text">{{loop.index}} / {{ len }}{%- if alts -%}<hr style="margin: 2px;">{{alts[loop.index0] | markdown(inline=true) | safe}}{%- endif -%}</div>
+  <svg class="gallery-svg" viewBox="0 0 1 {{ height }}"></svg>
+  <div class="magnifier-container">
+  <img class="gallery-img full-screen-img not-default" 
+    src="{{image}}" 
+    onclick="full_screen('{{images[loop.index0]}}')"
+    onauxclick="full_screen_new_page('{{images[loop.index0]}}')"
+    width="{{processed_width[loop.index0]}}" 
+    height="{{processed_height[loop.index0]}}">
+  <div class="magnifier-display">
+  <img class="magnifier" src="/ico/magnifier.svg">
+  {%- set meta = get_image_metadata(path=page.path ~ images[loop.index0]) -%}
+  {%- set actual_scale = meta.width / processed_width[loop.index0] | round(method="ceil", precision=1) -%}
+  <div class="magnifier-info">×{{actual_scale}}<br>{{meta.format}}</div>
+  </div>
+  </div>
+  <svg class="gallery-svg" viewBox="0 0 1 {{ height }}"></svg>
+</div>
+{% endfor %}
+
+<!-- Next and previous buttons -->
+<a class="gallery-prev" onclick="gallery_plus({{nth}}, -1)">&#10094;</a>
+<a class="gallery-next" onclick="gallery_plus({{nth}}, 1)">&#10095;</a>
+</div>
+
+<!-- Thumbnail images -->
+<div class="gallery-row">
+{% for image in processed_images %}
+  <div class="gallery-column" style="width: {{ 100 / len }}%;">
+    {% set meta = get_image_metadata(path=page.path ~ images[loop.index0]) %}
+    {% set height = (max_height - meta.height / meta.width) / 2 %}
+    <svg class="gallery-svg" viewBox="0 0 1 {{ height }}"></svg>
+    <img class="gallery-demo not-default{% if loop.first %} gallery-active{% endif %}" src="{{image}}" 
+      id="{{ "demo_" ~ nth ~ "_" ~ loop.index0 }}" 
+      onclick="gallery_set({{nth}}, {{loop.index0}})"
+      width="{{processed_width[loop.index0]}}" height="{{processed_height[loop.index0]}}">
+    <svg class="gallery-svg" viewBox="0 0 1 {{ height }}"></svg>
+  </div>
+{% endfor %}
+</div>
+
+<script>
+slide_index[{{nth}}] = 0;
+slide_count[{{nth}}] = {{len}};
+</script>

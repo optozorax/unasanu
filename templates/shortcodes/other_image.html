@@ -1,0 +1,16 @@
+{% import "scale_macros.html" as macros %}
+
+{% if scale is not defined %}
+    {% set_global scale = 1 %}
+{% endif %}
+{% set class = macros::frac_to_class(frac=scale) %}
+
+{% set path = page.path ~ path %}
+
+{% set meta = get_image_metadata(path=path) %}
+
+<img
+    class="not-default {{class}}"
+    width="{{meta.width}}"
+    height="{{meta.height}}"
+    src="{{path}}">

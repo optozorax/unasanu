@@ -1,0 +1,111 @@
+.wrapper {
+  max-width: 55rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+
+  @include small {
+    max-width: -webkit-calc(#{$navbar-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$navbar-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+.site-header {
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.1;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.4);
+  font-family: "Rubik", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: $base-line-height * $base-font-size * 1.3;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  text-decoration: none;
+
+  &,
+  &:visited,
+  &:hover {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 1.3;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include small {
+    position: absolute;
+    top: 3px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+    z-index: 10;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 25px;
+      height: 25px;
+      line-height: 0;
+      padding-top: 5px;
+      text-align: center;
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 10px 10px;
+      margin-right: 10px !important;
+      margin-left: 10px;
+    }
+
+  }
+}

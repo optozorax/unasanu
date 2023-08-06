@@ -1,0 +1,58 @@
+.index {
+	table {
+		border: 0px; 
+		table-layout: fixed; 
+		width: 100%;
+	}
+
+	td.first {
+		border: 0px; 
+		padding: 0.2rem; 
+		padding-right: 10px;
+
+		@include large {
+			width: 130px;
+			min-width: 130px;
+			max-width: 130px;
+		}
+
+		@include medium {
+			width: 130px;
+			min-width: 130px;
+			max-width: 130px;
+		}
+
+		@include small {
+			width: 90px;
+			min-width: 90px;
+			max-width: 90px;
+		}
+	}
+
+	td.second {
+		border: 0px;
+		padding: 0.2rem;
+		border-left: 1px solid #e9ebec;
+		padding-left: 10px;
+	}
+
+	img {
+		width: auto;
+		height: auto;
+		max-width: 85%;
+		max-height: 80px;
+	}
+
+	h2 {
+		margin-top: 0rem;
+		margin-bottom: 0.6rem;
+	}
+
+	.post-date {
+		font-size: $small-font-size;
+		color: $grey-color;
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+	}
+}

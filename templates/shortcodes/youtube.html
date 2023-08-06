@@ -1,0 +1,39 @@
+{% set data = load_data(path="static/youtube/" ~ id ~ ".json") %}
+
+<!-- todo: wait for https://github.com/jaredforth/webp/issues/7 to be resolved -->
+{# set new_image = resize_image(path=data.image_path, width=1280, height=1280, op="fit", format="webp", quality=75) #}
+{# set_global image_path = new_image.static_path | trim_start_matches(pat="static") #}
+{# set_global image_width = new_image.width #}
+{# set_global image_height = new_image.height #}
+<!-- --------------------- -->
+
+{% set image_meta = get_image_metadata(path=data.image_path) %}
+{% set_global image_path = data.image_path %}
+{% set_global image_width = image_meta.width %}
+{% set_global image_height = image_meta.height %}
+
+{% set link = "https://www.youtube.com/watch?v=" ~ id %}
+{% if timecode %}
+	{% set_global link = link ~ "&t=" ~ timecode %}
+{% endif %}
+
+<div class="yt-container">
+<a target="_blank" href="{{ link }}">
+<div class="yt-image-wrapper">
+<img class="yt-image not-default" src="/{{ data.image_path }}" width="{{image_width}}" height="{{image_height}}">
+</div>
+</a>
+<div class="yt-title-wrapper">
+<a class="yt-title" target="_blank" href="{{ link }}">{{ data.title }}</a>
+<span class="yt-text">Канал: </span><a target="_blank" class="yt-channel" href="{{ data.channel_url }}">{{ data.channel_name }}</a>
+</div>
+<div class="yt-duration">{{ data.minutes }}:{% if data.seconds < 10 %}0{% endif %}{{ data.seconds }}</div>
+{% if timecode %}
+{% set minutes = (timecode / 60) | round(method="floor", precision=0) %}
+{% set seconds = timecode % 60 %}
+<div class="yt-timecode">Таймкод {{ minutes }}:{% if seconds < 10 %}0{% endif %}{{ seconds }}</div>
+{% endif %}
+<a target="_blank" href="{{ link }}">
+<svg class="yt-button" height="100%" width="100%" version="1.1" viewBox="0 0 68 48"><path class="yt-button-inner" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
+</a>
+</div>

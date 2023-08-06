@@ -1,0 +1,67 @@
+@import "normalize";
+
+@import "sizes";
+@import "justify";
+
+@import "cayman";
+@import "site_header";
+@import "index";
+@import "section";
+@import "toc";
+@import "word_wrap";
+
+@import "shortcodes/image";
+@import "shortcodes/gallery";
+@import "shortcodes/details";
+@import "shortcodes/full_screen";
+@import "shortcodes/pros_cons";
+@import "shortcodes/admonition";
+@import "shortcodes/youtube";
+@import "shortcodes/figure";
+@import "shortcodes/container";
+@import "shortcodes/game_of_life";
+
+@import "fonts/JetBrainsMono";
+@import "fonts/Rubik";
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.archive-year {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.archive-year:before, .archive-year:after {
+    content: "";
+    border-top: 2px $border-color solid;
+    flex: 1 0 20px;
+}
+
+.archive-year:before {
+    margin: 0 20px 0 0;
+}
+
+.archive-year:after {
+    margin: 0 0 0 20px;
+}
+
+.anchor {
+    color: $section-headings-color;
+    margin-right: 5px;
+}
+
+html {
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
