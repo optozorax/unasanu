@@ -20,7 +20,6 @@
   <meta name="theme-color" content="#157878">
   <link rel="canonical" href="{{config.base_url | safe}}">
   <meta name="robots" content="noarchive">
-  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/atom.xml"> 
   <!-- --- -->
 
   <!-- Extra head declarations -->
@@ -56,7 +55,7 @@
   <header class="site-header" role="banner">
   {% block site_header %}
   <div class="wrapper">
-    <a class="site-title" href="/">{{ config.title | safe }}</a>
+    <a class="site-title" href="/">{{ config.extra.domain | safe }}</a>
   </div>
   {% endblock site_header %}
   </header>

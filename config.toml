@@ -1,6 +1,6 @@
 base_url = "https://unasanu.xyz/"
-title = "unasanu.xyz"
-description = "unasanu"
+title = "unasanu"
+description = "universe as a number"
 default_language = "en"
 output_dir = "docs"
 compile_sass = true

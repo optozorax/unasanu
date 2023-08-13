@@ -8,7 +8,7 @@ unasanu.xyz {
         file_server
     }
 
-    # header ?Cache-Control "max-age=864000"
+    header ?Cache-Control "max-age=864000"
 }
 
 www.unasanu.xyz {
