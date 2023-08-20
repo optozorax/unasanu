@@ -7,7 +7,7 @@ description = "A philosophical concept that explains why any universe exists and
 tags = []
 
 [extra]
-image = "english.png"
+image = "thumbnail.png"
 language = "English"
 language_flag = "english.png"
 toc_text = "Table of contents"
