@@ -9,8 +9,29 @@ unasanu.xyz {
     }
 
     header ?Cache-Control "max-age=864000"
+
+    log {
+        format json
+        output file /home/optozorax/logs/caddy_unasanu_access.log {
+            roll_size 10gb
+            roll_keep 1000
+            roll_keep_for 1000h
+        }
+    }
 }
 
 www.unasanu.xyz {
     redir https://unasanu.xyz{uri}
+}
+
+ru.unasanu.xyz {
+    redir https://unasanu.xyz/ru
+}
+
+en.unasanu.xyz {
+    redir https://unasanu.xyz/en
+}
+
+dev.unasanu.xyz {
+    reverse_proxy :1111
 }
