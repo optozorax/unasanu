@@ -1,6 +1,6 @@
 +++
 title = "unasanu — universe as a number"
-date = 2023-09-01
+date = 2023-08-28
 description = "A philosophical concept that explains why any universe exists and what will happen after death."
 
 [taxonomies]
@@ -14,7 +14,7 @@ toc_text = "Table of contents"
 minutes_text = "min"
 author_name = "Ilya Sheprut"
 license_word = "License"
-date_text = "1 september 2023"
+date_text = "28 august 2023"
 lang = "en"
 position = 2
 +++
