@@ -25,9 +25,9 @@ position = 2
 **unasanu** (= **un**iverse **as** **a** **nu**mber) is a philosophical concept, according to which any simulated universe exists, because it can be represented as an already existing natural number. This concept can provide explanations for the following questions:
 * Do alternative universes exist and why?
 * Do we live in a simulation?
-* Can theoretically a god exist and how omnipotent can he be?
+* Can theoretically a god exist and how omnipotent can it be?
 * Why is it impossible to die and what happens after death?
-* Is it possible to change the universe without worrying about heat death?
+* Is it possible to change the universe without worrying about Heat death?
 {{ admonition_end() }}
 
 This idea and its implications are logically derived from our current understanding of mathematics, physics, and consciousness. However, unasanu does not require a many-worlds interpretation of quantum mechanics, the infinity of our universe, or the hypothesis of an Omega point — it relies on other, more reliable and simple bases.
@@ -61,7 +61,7 @@ People do not like the idea of living in an illusory simulation. Everyone wants 
 
 A physical simulation emulates low-level laws, with no approximations to simplify this. High-level structures can be built on the basis of these low-level laws (for example, gas laws can be built on a model of gas consisting of elastic particles). What structures arise and according to which high-level laws will these structures function, depends on the structures themselves. In a physical simulation, high-level structures (like a human) are not approximated by something simpler: if there exists a human in such a simulation, they exist down to their cells and atoms.
 
-There is a chance that our reality is a physical simulation. However, this idea is unprovable and irrefutable. If we live in a physical simulation, we are completely fine with it, since everything we know about physics, star evolution, evolution of living beings, remains intact. Stating "from the fact that we live in a simulation, it follows that all this is unreal," is meaningless in terms of a physical simulation, because such a simulation is reality itself. The only downside is that there could be an external entity having control over our physical reality, akin to the "creative mode" in Minecraft [\[9\]]. This hypothetical possibility will be further analyzed.
+There is a chance that our reality is a physical simulation. However, this idea is unprovable and irrefutable. If we live in a physical simulation, we are completely fine with it, since everything we know about physics, star evolution, evolution of living beings, remains intact. Stating "from the fact that we live in a simulation, it follows that all this is unreal", is meaningless in terms of a physical simulation, because such a simulation is reality itself. The only downside is that there could be an external entity having control over our physical reality, akin to the "creative mode" in Minecraft [\[9\]]. This hypothetical possibility will be further analyzed.
 
 It's important to remember that **simulation ≠ emulation**. These words seem similar, but they carry utterly different meanings. The world could be very real even if its laws of physics are simulated on a computer.
 
@@ -276,39 +276,39 @@ As I mentioned, our simulation has some fundamental limitations without which we
 
 If this is not enough to comprehend the power of determinism, here are a couple more thought experiments:
 * If we erase all the simulation results and simulate again from scratch, we'll end up with exactly the same outcome.
-* If we pause the simulation and resume it a billion years later, the entities within it would not feel this pause. Their sense of time would be dictated by the internal laws of their universe. We exist outside their timeline, and they are beyond ours.
-* If we run the same simulation on multiple computers simultaneously, it would not change anything for the entities.
-* If the simulation is reversible and we somehow retrieve a very distant moment from the future, then even if we simulate it backward, the entities will not feel as if they're living in reverse.
+* If we pause the simulation and resume it a billion years later, the creatures within it would not feel this pause. Their sense of time would be dictated by the internal laws of their universe. We exist outside their timeline, and they are beyond ours.
+* If we run the same simulation on multiple computers simultaneously, it would not change anything for the creatures.
+* If the simulation is reversible and we somehow retrieve a very distant moment from the future, then even if we simulate it backward, the creatures will not feel as if they're living in reverse.
 
-Of course, this might still not be enough, and I will further demonstrate how one can prove that they remain alive even if we simulate them.
+Of course, this might still not be enough, and I will further demonstrate how one can prove that they remain alive even if we don't simulate them.
 
 # Universe as a number
 
-Alright, we agree that the entities are alive when we simulate them on a computer, and it is not enough for us that they have a single future. We believe that their future only exists after we've simulated it.
+Alright, we agree that the creatures are alive when we simulate them on a computer, and it is not enough for us that they have a single future. We believe that their future only exists after we've simulated it.
 
-So, let's be precise about what we have to claim it as proof that they have lived through a certain stretch of time. All we have is: the simulation algorithm and all the simulation steps up to now. We consider the existence of this information to be equivalent to proving the life of these entities.
+So, let’s be precise about what we have to claim it as proof that they have lived through a certain stretch of time. All we have is: the simulation algorithm and all the simulation steps up to now. We consider the existence of this information to be equivalent to proving the life of these creatures.
 
-Imagine we've run this simulation, gathered all the data and stored it on a large hard drive: first the algorithm, then step 1, then step 2, ..., and finally step N. Now we have evidence that these entities lived up to step N. But, of course, data on a hard drive is always some sequence of zeroes and ones. We can convert this data into one large positive integer. And this integer still serves as evidence of the entities' existence.
+Imagine we've run this simulation, gathered all the data and stored it on a large hard drive: first the algorithm, then step 1, then step 2, ..., and finally step N. Now we have evidence that these creatures lived up to step N. But, of course, data on a hard drive is always some sequence of zeroes and ones. We can convert this data into one large natural number. And this number still serves as evidence of the creatures' existence.
 
 {{ image(path="number.png", scale="2/3") }}
 
-Here's the catch: as we know, all positive integers already exist.
+Here's the catch: as we know, all natural numbers already exist.
 
-So, given that all positive integers exist, this means that among them we'll definitely find the number that we used to encode the simulation of the entities we simulated. But among them also exists the same simulation, but with an extra moment in time. Moreover, any other simulation exists for any point in time within it. All these numbers are equivalent to evidence of the existence of some entities that are represented in these simulations.
+So, given that all natural numbers exist, this means that among them we'll definitely find the number that we used to encode the simulation of the creatures we simulated. But among them also exists the same simulation, but with a next moment in time. Moreover, any other simulation exists for any point in time within it. All these numbers are equivalent to evidence of the existence of some creatures that are represented in these simulations.
 
-From this, we conclude that <span class="green2-bg example">the result of any simulation, that can be run on a computer, already exists as a positive integer</span>. That's where the name of this concept comes from: **the universe as a number**.
+From this, we conclude that <span class="green2-bg example">the result of any simulation, that can be run on a computer, already exists as a natural number</span>. That's where the name of this concept comes from: **universe as a number**.
 
 {{ admonition_start(color="blue", title="📝 Introduced definition") }}
-**Self-existence** is the concept that a universe exists for itself, if living entities within it are capable of observing their own existence and their universe.
+**Self-existence** is the concept that a universe exists for itself, if living creatures within it are capable of observing their own existence and their universe.
 {{ admonition_end() }}
 
-Earlier, we agreed that entities in a computer simulation are capable of observing their own universe. Hence, this universe, at the very least, exists for itself. Then we concluded that this existence is equal to existing as a number. Therefore, from the existence of all natural numbers, the existence of all potentially simulated universes follows, each for itself. And consequently, in all such universes where life exists, that life will observe its universe.
+Earlier, we agreed that creatures in a computer simulation are capable of observing their own universe. Hence, this universe, at the very least, exists for itself. Then we concluded that this existence is equal to existing as a number. Therefore, from the existence of all natural numbers, the existence of all potentially simulated universes follows, each for itself. And consequently, in all such universes where life exists, that life will observe its universe.
 
-I find the example of physical simulation appealing because it doesn't require us to define the term "existence" beforehand. Instead, it's so self-evident that we should derive the definition of "existence" from it. In this case, we come up with the concept of "self-existing". If we agree that these entities have a sense of living within the simulation when we run it on a computer, then we must immediately conclude that they sensed life even before our simulation, existing as a number.
+I find the example of physical simulation appealing because it doesn't require us to define the term "existence" beforehand. Instead, it's so self-evident that we should derive the definition of "existence" from it. In this case, we come up with the concept of "self-existing". If we agree that these creatures have a sense of living within the simulation when we run it on a computer, then we must immediately conclude that they sensed life even before our simulation, existing as a number.
 
 So what happens when we simulate a particular world? In this context, we can say that with a <span class="green2-bg example">simulation, we don't create a world, we observe one that already exists</span>. And computational power is spent precisely on this observation. Choosing initial conditions is not "creating a world", but searching for a world with the properties we need, among an infinite variety of different worlds.
 
-And when we stop the simulation, the entities continue to live for themselves. They can tell other entities in their universe about it, but not us. We can't observe it because we've turned off the simulation.
+And when we stop the simulation, the creatures continue to live for themselves. They can tell other creatures in their universe about it, but not us. We can't observe it because we've turned off the simulation.
 
 ## The anthropic principle
 
@@ -353,7 +353,7 @@ Now, let's consider the argument about all possible physical laws; they too are 
 In some sense, this is similar to the anthropic principle, but it's more fundamental and happens at every moment, not just at the start of time during the creation of the universe. I suggest introducing a term for this.
 
 {{ admonition_start(color="blue", title="📝 Introduced definition") }}
-**Anthropic filtration** — a principle according to which an observer is able to filter out universes where computations are either not occurring, or occurring incorrectly, as well as being capable of filtering out universes where their emergence or existence is impossible.
+**Anthropic Filtration** — a principle according to which an observer is able to filter out universes where computations are either not occurring, or occurring incorrectly, as well as being capable of filtering out universes where their emergence or existence is impossible.
 {{ admonition_end() }}
 
 As we go on, we'll see that some of these arguments can be applied to anthropic filtration, and some cannot.
@@ -362,7 +362,7 @@ As we go on, we'll see that some of these arguments can be applied to anthropic 
 
 In physics, there's this state of matter called "false vacuum." Its occurrence is probable. If it ever materializes at any spot in the universe, it spreads out in all directions at light speed, devouring anything that crosses its path. A human being is incapable of observing the existence of a false vacuum because our brains simply operate too slowly. We would likely perish before becoming aware of it, and information about a false vacuum cannot surpass the speed of light.
 
-In this context, a false vacuum falls under the examples of anthropic filtering. This is because, in those universes where it arises, all living entities perish without knowing about it, while other universes that differ by a mere atom, where this false vacuum doesn't emerge, continue to exist. Thus, a false vacuum is subject to anthropic filtering.
+In this context, a false vacuum falls under the examples of anthropic filtration. This is because, in those universes where it arises, all living creatures perish without knowing about it, while other universes that differ by a mere atom, where this false vacuum doesn't emerge, continue to exist. Thus, a false vacuum is subject to anthropic filtration.
 
 So if the laws of physics are filtered by the observer once—upon the universe's genesis or the observer's birth in the appropriate universe—the false vacuum is filtered by observers at each moment in time. And if scientists discover that the possibility of a false vacuum appearing in the observable universe is extremely high but it never does and we continue living, it doesn't contradict unasanu's point of view.
 
@@ -391,7 +391,7 @@ I argue that eternalism is the correct interpretation of time for simulations. I
 To suggest a rebuttal to eternalism in simulations, consider the following: we assume that in our world, time cannot be reduced to static structures. Therefore, if we believe that in some simulation there's time similar to our own, the only way to define it is by attaching it to our time. Thus, time in the simulation flows synchronously with our time as long as we are calculating it.
 
 This can be refuted in two ways by demonstrating that the "current" moment of time in a simulation is not the only one: 
-* We create a duplicate of this simulation and simulate it with a delay of one second. So, what time is considered "current"? What time do the entities inside the simulation feel at this "particular moment in time"?
+* We create a duplicate of this simulation and simulate it with a delay of one second. So, what time is considered "current"? What time do the creatures inside the simulation feel at this "particular moment in time"?
 * There exist classes of simulations called "reversible" ones. They can be simulated not only into the future but also into the past. Quantum mechanics is reversible, which means such a simulation could be very similar to our universe. What if we create a duplicate of this simulation and start to simulate it simultaneously into the past and the future? What point in time will be considered current?
 
 In conclusion, we cannot entirely refute the idea that temporal dynamics can't exist in a computer simulation. It can instead be framed this way: a simulation isn't defined by something dynamic, but by static units. There's no paradox in this concept, even when applied to our universe. Therefore, <span class="green2-bg example">the essential property of time isn't its continuous motion, but rather its role in connecting different layers of information through the laws of physics.</span>
@@ -414,7 +414,7 @@ If we record all our interventions and then append them next to the program and 
 
 All such potential interventions could also be numerically encoded and appended next to the number of the regular simulation program. <span class="green2-bg example">Therefore, all possible universes with all possible interventions also exist, even without the need to intervene directly in them.</span> 
 
-However, we must not forget that just as there exist universes with all possible interventions, a universe continues to exist without any interventions at all.
+However, we must not forget that just as there exist universes with all possible interventions, a universe without any interventions at all continues to exist.
 
 ## Tegmark's mathematical structures 
 
@@ -448,7 +448,7 @@ It is known for certain that all naive simulations are subsets of mathematical s
 
 {{ image(path="structure.png", scale="2/3") }}
 
-Probably such a description might seem unclear, which is why I'd like to present an example of a universe which appears to function naively, but in reality, does not. An explicit example: time travel with the inability to alter the past. Two appropriate examples that come to my mind are the Harry Potter books and the movie "Inception". Imagine, for a moment, how you'd simulate a world where time travel is possible yet built in such a manner that the past remains unchangeable? You'd have to simultaneously simulate the past considering the future and the future with respect to the past, ensuring both dovetail into each other. Currently, we do not have methods to compute universes with such laws of time travel. Therefore, the only viable alternative is to iterate through all possible worlds (with all possible futures and pasts) and verify which of these comply with the necessary laws. Essentially, the entire world can only be computed in a format of "all of time at once". However, creatures in such a world obviously perceive their own existence and are astonished by their own laws of time travel. You can delve deeper into this topic in the article "Causal universes" [\[20\]].
+Probably such a description might seem unclear, which is why I'd like to present an example of a universe which appears to function naively, but in reality, does not. An explicit example: time travel with the inability to alter the past. Two appropriate examples that come to my mind are the Harry Potter books and the movie "Tenet". Imagine, for a moment, how you'd simulate a world where time travel is possible yet built in such a manner that the past remains unchangeable? You'd have to simultaneously simulate the past considering the future and the future with respect to the past, ensuring both dovetail into each other. Currently, we do not have methods to compute universes with such laws of time travel. Therefore, the only viable alternative is to iterate through all possible worlds (with all possible futures and pasts) and verify which of these comply with the necessary laws. Essentially, the entire world can only be computed in a format of "all of time at once". However, creatures in such a world obviously perceive their own existence and are astonished by their own laws of time travel. You can delve deeper into this topic in the article "Causal universes" [\[20\]].
 
 By the way, there is an article titled "The Universe is not a Computer" [\[21\]], which provides a different perspective on describing physics and offers an approach to compute "all of time at once".
 
@@ -470,7 +470,7 @@ Develop a format to describe computable universes as "mathematical structures". 
 
 ## Principle of construction
 
-If every possible universe exists, does that include the universe of Lord of the Rings, Star Wars or multiverse of anime characters? To answer these questions, I propose the following principle:
+If every possible universe exists, does that include the universe of Lord of the Rings, Star Wars or Isekai? To answer these questions, I propose the following principle:
 
 {{ admonition_start(color="blue", title="📝 Introduced definition") }}
 **Principle of Construction** — If one can propose a method for constructing a universe and its laws of physics, then such a universe does exist.
@@ -500,7 +500,7 @@ This implies we can find universes that roughly meet our conditions.
 
 Hence, it's unlikely that the universe of 'The Lord of the Rings' exists in the exact precision as described in the books or depicted in the movies, with all conceivable or inconceivable demands on it. However, there are surely universes close to it that have fewer restrictions, and the more compromises we make, the more natural the result will seem, and the larger the range of such universes will be. Perhaps even a more natural universe might turn out to be much more interesting than the universe of 'The Lord of the Rings' so the loss won't be substantial.
 
-On the other hand, nothing prevents us from constructing a universe for a time-traveler. We can take an existing medieval world with people and then insert a person from the future after their death, simulate this universe further and see what happens. So in this regard, time-traveler universes are not impossible. Although again, an exact parallel from your favorite anime probably doesn't exist.
+On the other hand, nothing prevents us from constructing a universe for a Isekai character. We can take an existing medieval world with people and then insert a person from the future after their death, simulate this universe further and see what happens. So in this regard, Isekai universes are not impossible. Although again, an exact parallel from your favorite anime probably doesn't exist.
 
 {{ admonition_start(color="red", title="⚠️ Note") }}
 In this chapter, I implicitly assumed that our universe can be simulated on a computer, and that it obeys unasanu. However, this is a separate, significant question we will discuss later. For now, I will implicitly assume this for the sake of simplicity. You can always extrapolate these examples to other universes which obey unasunu.
@@ -525,7 +525,7 @@ Regardless of how the universe in which you reside is computed, you won't feel i
 I find it to be one of the most powerful properties of computations. The result of deterministic computation does not depend on the Turing-complete substrate on which they are calculated:
 * on a computer 
 * on Babbage's Analytical Machine
-* on a human computer composed of a 30-million-strong army (Hello, Lu Chisin!)
+* on a human computer composed of a 30-million-strong army (Hello, Liu Cixin!)
 * on redstone from the Minecraft game
 * or if some immortal entity does these computations on a cellular automaton 110, moving stones according to the simplest rules (Automaton 110 is Turing-complete [\[22\]]).
 
@@ -540,7 +540,7 @@ The image is clickable.
 
 Let's suppose we postulate that only those universes exist which are explicitly simulated on our computers.
 
-Let's envisage a hypothetical thought experiment: say we initiated a virtual simulation in which various digital entities live their own lives, and then humanity becomes extinct. Billions of years later, extraterrestrials land on Earth to observe what is happening. What if they can't decode the computations that have taken place on the computer? Would the virtual universe cease to exist? What if the universe was filled with countless computers running all sorts of simulations, and we simply haven't deciphered their significance yet?
+Let's envisage a hypothetical thought experiment: say we initiated a virtual simulation in which various digital creatures live their own lives, and then humanity becomes extinct. Billions of years later, aliens land on Earth to observe what is happening. What if they can't decode the computations that have taken place on the computer? Would the virtual universe cease to exist? What if the universe was filled with countless computers running all sorts of simulations, and we simply haven't deciphered their significance yet?
 
 ## Why all natural numbers exist
 
@@ -590,7 +590,7 @@ Let's consider what calculations are necessary to replicate Earth at this presen
 
 Mathematically, the essence is that for any finite point in time `T`, we can find a finite chunk of space from the Big Bang, so that when simulating it up until `T`, information that the universe is finite would not reach the observer at the center of this chunk.
 
-But where do we get information about the organization of elementary particles at the time of the Big Bang? As a number, all possible initial conditions exist, so that's not important.
+But where do we get information about the organization of elementary particles at the time of the Big Bang? All possible initial conditions exist as a number, so that's not important.
 
 However, this method can't be applied to infinite universes without a limit on the maximum speed. For instance, in a universe with Newtonian gravity where gravity instantaneously propagates, this is called "action at a distance". An example of a universe where there is a limit on the speed of information transmission is Conway's "Game of Life", where the maximum speed is one cell per move.
 
@@ -640,14 +640,14 @@ Regarding physical simulation methodologies, there is the Finite Element Method 
 {{ image(path="../ru/FAE_visualization.jpg", format="jpg", scale="1/2") }}
 {{ figure_end(caption="An example of another simulation using FEM. Illustration from Wikipedia.") }}
 
-Is it possible to simulate our universe using the Finite Element Method (FEM)? Certainly. The question, however, is about the precision of the computations. You could choose a grid size 1000 times smaller than the Planck length, and you might think that should be enough to observe our world.
+Is it possible to simulate our universe using the Finite Element Method (FEM)? It is quite possible. The question, however, is about the precision of the computations. You could choose a grid size 1000 times smaller than the Planck length, and you might think that should be enough to observe our world.
 
 But then comes the question of accuracy: if our universe is simulated by FEM, or is even a cellular automaton, could we detect this experimentally? In theory, yes. For this, we would have to conduct experiments with incredibly high energy levels, or observe very distant stars, or concoct a very clever set of phenomena. It seems that these processes should expose the discrete artifacts of space.
 
 At the same time, there is one simple principle which remains: <span class="green2-bg example">Any experiment speaks the truth only up to a certain accuracy</span>. If we conducted an experiment where we gave a proton energy equivalent to a galaxy's mass, then collided it with another proton, and the result of their collision agreed with the continuity of space, it would tell us that space only appears continuous up to a certain, even if incredibly small, limit. And it's unclear if it would be possible to conceive of an experiment which would only work under the condition that space is perfectly continuous.
 
 {{ admonition_start(color="orange", title="🔢 Mathematical Problem") }}
-Is it possible to develop a type of continuum system in which an experiment can be conducted to show that the environment consists of a truly perfect continuum? The experiment should be feasible for intelligent beings within the environment, require a finite amount of matter and energy and should operate for a limited period.
+Is it possible to develop a type of continuum system in which an experiment can be conducted to show that the environment consists of a truly perfect continuum? The experiment should be feasible for intelligent beings within the environment, require a finite amount of matter and energy and should operate for a limited period of time.
 
 If so, would our universe be classified as one of these types of continuum environments?
 {{ admonition_end() }}
@@ -662,7 +662,7 @@ Suppose our universe is described by a certain differential equation and in the 
     * The time grid size is Y·2<sup>k</sup>.
     * We solve the FEM for the entire universe using the defined spatial and time grids and real numbers with the defined precision.
 
-For such an algorithm, it turns out that for each subsequent cycle iteration `k`, we increase the precision of all algorithm components by a factor of 2. Imagine now that an observer inside such a universe wants to run an experiment to ascertain the continuity of his own space (or time). For any level of experimental precision, there will always be a `k` that will result in the experiment proving his universe to be a continuum. This is another application of simulation by process of limits.
+For such an algorithm, it turns out that for each subsequent cycle iteration `k`, we increase the precision of all algorithm components by a factor of 2. Imagine now that an observer inside such a universe wants to run an experiment to ascertain the continuity of his own space (or time). For any level of experimental precision, there will always be a `k` that will result in the experiment proving his universe to be a continuum. This is another application of the Limit Method Simulation.
 
 This approach suits particularly well the case of the heat death of the universe. In such a case, you can select some finite `k`, such that an observer won't be able to carry out an experiment with the necessary precision within the universe's lifetime. 
 
@@ -675,14 +675,14 @@ Of course, I've demonstrated this is feasible only for universes which can be de
 For instance, there's a wonderfully appealing concept, the "Infinite Nestedness of Matter" [\[25\]], stating that there are no elementary particles, and all our particles are made up of their own little universes. I'm not sure whether it's possible to simulate such a universe using this method.
 
 {{ admonition_start(color="orange", title="🔢 Mathematical Problem") }}
-Identify which types of infinite and continuous universes can be simulated with FEM, which can be simulated through the method of limits, and whether the laws of physics as we know them pertain to this class of universes.  
+Identify which types of infinite and continuous universes can be simulated with FEM, which can be simulated through the Limit Method Simulation, and whether the laws of physics as we know them pertain to this class of universes.  
 {{ admonition_end() }}
 
-Alternatively, one could argue that continuous universes also exist in and of themselves, being deterministic, regardless of how simulative they are.
+Alternatively, one could argue that continuous universes also exist for themselves, because they are deterministic.
 
 Indeed, this raises a small question. If there are strictly more real numbers than natural numbers, how have we managed to fit continuum universes into natural numbers? The answer is straightforward — computable real numbers form a countable set. The remaining part of real numbers, which forms this set and is greater than the natural ones, is non-computable. For more detailed information about this, you can refer to the Wikipedia article, "Computable number" [\[26\]].
 
-By the way, my method of taking limits resembles the definition of uncomputable "approachable numbers", which are defined as the limit of a computable function. I borrowed this concept from the article "A definable number which cannot be approximated algorithmically" [\[27\]]. Interestingly, almost all known examples of uncomputable numbers are "approachable". Meanwhile, it's possible to introduce a real number that is not only uncomputable but also unapproachable.
+By the way, myLimit Method Simulation resembles the definition of uncomputable "approachable numbers", which are defined as the limit of a computable function. I borrowed this concept from the article "A definable number which cannot be approximated algorithmically" [\[27\]]. Interestingly, almost all known examples of uncomputable numbers are "approachable". Meanwhile, it's possible to introduce a real number that is not only uncomputable but also unapproachable.
 
 ## Absolute randomness
 
@@ -720,7 +720,7 @@ If we could solve the halting problem, it could be used for proving certain type
 
 It seems that the existence of a universe that possesses physical phenomena capable of solving the halting problem is impossible. But I will show that's not the case.
 
-The central argument is that a universe capable of solving the halting problem is determined. This means that regardless of whether we simulate it or not, its future is singular, and beings within it will live their life. But if you're not satisfied with this, there's another way.
+The central argument is that a universe capable of solving the halting problem is deterministic. This means that regardless of whether we simulate it or not, its future is singular, and creatures inside it will live their life. But if you're not satisfied with this, there's another way.
 
 Suppose we have a deterministic universe with a unique device for solving the halting problem. We input a program into it and it outputs a response — 0 or 1, whether it will halt or not respectively. Now we're simulating this universe in a typical manner, except every time the device is asked a question we clone the current universe, and give one the input of 0, the other 1. We do this over and over again, essentially simulating by exhaustive search.
 
@@ -730,9 +730,9 @@ The interesting part here is that only one of these branching parallel universes
 
 So even if in our laws of physics, or in the way our consciousness operates, we were to find a phenomenon capable of solving the halting problem, it could still exist as a computer program.
 
-In this scenario, much like with the argument of irrational numbers, to avoid ending up in a universe with ordinary computations, it would be desirable that the consciousness of an observer in such a universe would utilize incomputability – a vital necessity for the operation of that consciousness. That means that the incomputability in the laws of physics should come under the jurisdiction of anthropic filtering. As far as we know at this point, neither the physical phenomena of our universe, nor human consciousness require the solution to the halting problem for their existence.
+In this scenario, much like with the argument of irrational numbers, to avoid ending up in a universe with ordinary computations, it would be desirable that the consciousness of an observer in such a universe would utilize incomputability – a vital necessity for the operation of that consciousness. That means that the incomputability in the laws of physics should come under the jurisdiction of anthropic filtration. As far as we know at this point, neither the physical phenomena of our universe, nor human consciousness require the solution to the halting problem for their existence.
 
-If there are other forms of incomputability out there, please do let us know.
+If there are other forms of incomputability out there, please do let me know.
 
 ## Regardless if the human consciousness can be simulated
 
@@ -754,9 +754,9 @@ Is it possible to simulate human consciousness?
 
 There is an argument which goes like: "Biology, sociology, psychology, and other such fields can't be described by mathematics, hence our universe is also non-mathematical and can't be simulated".
 
-This is a curious argument that seems to stem from a lack of understanding of what it means to 'describe in mathematical terms' and the capabilities of mathematics and programming.
+This is a curious argument that seems to stem from a lack of understanding of what it means to "describe in mathematical terms" and the capabilities of mathematics and programming.
 
-As I understand it, by 'describe in mathematical terms', this argument implies that these things could either be described by simple low-level rules that can derive everything else, or they are governed by simple high-level rules that can predict the behavior of the entire system.
+As I understand it, by "describe in mathematical terms", this argument implies that these things could either be described by simple low-level rules that can derive everything else, or they are governed by simple high-level rules that can predict the behavior of the entire system.
 
 In other words, this argument equates the inability to simulate to the nonexistence of a beautiful and straightforward method to describe the system's behavior. There is a logical fallacy in this statement, as the latter does not imply the former.
 
@@ -803,7 +803,7 @@ Other universes that cannot be simulated require further study. Most likely, eve
 Following these assertions, we can confidently say that our universe is computable and, therefore, obeys unasanu.
 
 We now have a better understanding of the open questions:
-* For which classes of universes can the method of limit transition be applied? And to which class does our universe belong?
+* For which classes of universes the Limit Method Simulation can be applied? And to which class does our universe belong?
 * Which classes of universes can possibly be computed using a naive method? And does our universe belong to such a class?
 
 And I want to emphasize this: even if our universe and our consciousness do not adhere to unasanu for any reason, all these ideas apply to universes that exist in the form of programs. We now know that such universes exist, and that's amazing. And I will show even more interesting implications of unasanu for these universes.
@@ -836,7 +836,7 @@ In general, since conasanu is more fundamental than unasanu, it would be logical
 
 It may appear that conasanu implies that there's some form of consciousness encoded in a stone, and in any other object, and that they're all conscious and feel something. This viewpoint is called **panpsychism**.
 
-The stone indeed contains a multitude of numbers, many of which can be construed as computed consciousnesses. However, this doesn't truly mean anything significant. With the same logic, your physical brain contains numerous different consciousnesses, some of which are the same as those in any random stone or brain of a similar size. The key point is that these consciousnesses primarily exist as numbers; their existence within a stone is merely an addendum. 
+The stone indeed contains a multitude of numbers, many of which can be interpreted as computed consciousnesses. However, this doesn't truly mean anything significant. With the same logic, your physical brain contains numerous different consciousnesses, some of which are the same as those in any random stone or brain of a similar size. The key point is that these consciousnesses primarily exist as numbers; their existence within a stone is merely an addendum. 
 
 So, how does human consciousness differ from the consciousness within a stone? It's down to interaction. Human consciousness can interact with the external universe in such a way that other similar consciousnesses (humans and animals) can observe and replicate. The consciousnesses within a stone exist solely for themselves, indifferent to the universe they reside in. Their sense of time exists within their own sets of numbers and is not tied to our own sense of time. Although, there are suggestions, as argued by Hilary Putnam [\[29\]], that the consciousnesses within stones could have their time synced with the time of our universe.
 
@@ -850,14 +850,14 @@ In regards to this topic, I would like to express my interpretation of panpsychi
 **Qualia** (a.k.a. "subjective experiences") refers to the sensations you feel – smells, colours, emotions, love, etc.
 {{ admonition_end() }}
 
-In philosophy, qualia is distinguished as a separate category, generating a lot of controversy. For instance, some insist that Artificial Intelligence will never be capable of possessing qualia, especially love, due to reasons somewhat as obscure and random as Gladiolus.
+In philosophy, qualia is distinguished as a separate category, generating a lot of controversy. For instance, some insist that Artificial Intelligence will never be capable of possessing qualia, especially love, just because.
 
 I view the brain as a rather complex program, and not something unique, as such, I believe there's nothing fundamental about subjective experiences that would merit philosophical debates. Essentially, I don't think subjective experiences exist at all: the way you feel red, for instance, is the outcome of your brain's computations, the result of red color encoding in your neurons, a combination of associations, links between other colors, memories activated upon seeing red; and the eye strain one experiences reading red text on a blue background is likewise enabled by the physical design of your eyes. All of these are dry calculations and algorithms. These vivid sensations are all thanks to the heavy interconnectivity of your brain's various departments.
 
 Or put more optimistically if you will: if some property doesn't exist, everything has it! :)
 
 {{ admonition_start(color="blue", title="📝 Introduced definition") }}
-**Panqualia** — a viewpoint on qualia that posits every algorithm possesses qualia per definition.
+**Panqualia** — a viewpoint on qualia which states that every algorithm possesses qualia.
 {{ admonition_end() }}
 
 Let's take for example a random neural network and feed it random data. I believe this neural network has subjective experiences and feels something. The only problem is that this network:
@@ -936,7 +936,7 @@ Assume that our universe can be simulated. We could then create a universe progr
 
 As with the notion of consciousness in stones, this again makes no sense, at least until external simulators interact with our world and we can observe and investigate it.
 
-Consider "Nick Bostrom's Argument", which postulates that any highly developed civilization will eventually start creating simulations for reasons like gladiolus, hence we _most likely_ are a simulation within a simulation within a simulation and so forth. Importantly, this argument is probabilistic: it cannot be assumed with certainty that someone would want to simulate our universe, while the principle of constructing provides a definitive answer to this question. Therefore, Bostrom's argument can be ignored when addressing this matter.
+Consider "Nick Bostrom's Argument", which postulates that any highly developed civilization will eventually start creating simulations just because, hence we _most likely_ are a simulation within a simulation within a simulation and so forth. Importantly, this argument is probabilistic: it cannot be assumed with certainty that someone would want to simulate our universe, while the principle of constructing provides a definitive answer to this question. Therefore, Bostrom's argument can be ignored when addressing this matter.
 
 There's also no point in "leading an interesting life so our simulation doesn't get turned off", because as we remember, even if it is shut down in all universes, we continue to exist numerically.
 
@@ -950,11 +950,11 @@ Let's see the place of God from the perspective of unasanu. There are only two m
 
 According to the principle of constructing, every universe is populated with an infinite variety of Gods. You can employ the universe with a computational outlet from the earlier point. Even if God has projected his face onto the sky, you can always create a universe where he looks entirely different, but decided to alter his face using technologies. This implies that <span class="green2-bg example">every universe has an infinite number of gods</span>.
 
-Even if some deity oversees a certain universe, copying the brains of all beings after death and distributing them into other simulations, called "heaven" and "hell", this deity isn't omnipotent. The point being, the universe would still exist without their intervention, and there's nothing they can do about it. <span class="green2-bg example">No deity can prevent any universe from existing.</span> The same principle applies to universes that are filled with suffering, where this deity seems strangely absent. This means, if a being felt that after death it found itself neither in the "heaven" nor the "hell" that its deity has spoken of, this circumstance might not be the will of its deity. 
+Even if some god oversees a certain universe, copying the brains of all beings after death and distributing them into other simulations, called "heaven" and "hell", this god isn't omnipotent. The point being, the universe would still exist without their intervention, and there's nothing they can do about it. <span class="green2-bg example">No god can forbid some universe to exist.</span> The same principle applies to universes that are filled with suffering, where this god seems strangely absent. This means, if a being felt that after death it found itself neither in the "heaven" nor the "hell" that its god has spoken of, this circumstance might not be the will of its god. 
 
-<span class="orange-bg example">Is this deity capable of knowing everything that will happen in the universe they're simulating?</span> Yes, as, like any programmer, they could simulate it up to the required point, and then restore the past save state. Problems arise when the deity wants to know what the future of their universe will be assuming they intervene in it. This would necessitate them to simulate, among other things, themselves faster than their own time flow, all while integrating the same simulation within itself, and so on indefinitely. Such a scenario is broadly impossible to simulate. Therefore, the deity cannot know with absolute certainty what will happen to their universe along with them in the future. They can, however, replace themselves with an approximate model (which does not observe the simulation with the approximate model) or a scripted doll in their simulations, and know their own future in this simulation with the required accuracy. Alternatively, they can know their own future with absolute certainty without the possibility of altering it, but then they would have to subject themselves to limitations, calculating such a universe "all at once", as was proposed to be done with universes featuring time travel. 
+<span class="orange-bg example">Is this god capable of knowing everything that will happen in the universe they're simulating?</span> Yes, as, like any programmer, they could simulate it up to the required point, and then restore the past save state. Problems arise when the god wants to know what the future of their universe will be assuming they intervene in it. This would necessitate them to simulate, among other things, themselves faster than their own time flow, all while integrating the same simulation within itself, and so on indefinitely. Such a scenario is broadly impossible to simulate. Therefore, the god cannot know with absolute certainty what will happen to their universe along with them in the future. They can, however, replace themselves with an approximate model (which does not observe the simulation with the approximate model) or a scripted doll in their simulations, and know their own future in this simulation with the required accuracy. Alternatively, they can know their own future with absolute certainty without the possibility of altering it, but then they would have to subject themselves to limitations, calculating such a universe "all at once", as was proposed to be done with universes featuring time travel. 
 
-No deity is the prime cause of any universe; any universe would exist even without them. Hence, we can consider another variant of introducing a deity:
+No god is the prime cause of any universe; any universe would exist even without them. Hence, we can consider another variant of introducing a god:
 
 {{ admonition_start(color="blue", title="📝 Introduced definition") }}
 **Meta-god** — is a god, who has created all universes, along with all other conventional gods.
@@ -988,7 +988,7 @@ Now what is interesting is that an honest simulation, which simulates our univer
 If there are infinitely many of these bugged simulations, and only one honest one, why do we observe the honest simulation?! Why don't we see completely random events with the removal and appearance of matter occurring every femtosecond?
 {{ admonition_end() }}
 
-Moreover, such a bugged universe does not interfere with the ability of observers to observe their universe, because it is calculated honestly, it just takes strange initial conditions of matter, so anthropic filtering is not applicable here.
+Moreover, such a bugged universe does not interfere with the ability of observers to observe their universe, because it is calculated honestly, it just takes strange initial conditions of matter, so anthropic filtration is not applicable here.
 
 {{ admonition_start(color="red3", title="🤕 Weak Spot") }}
 Why don't we observe bugs in the universe?
@@ -1007,9 +1007,9 @@ Another solution to this problem: what if the laws of physics in our universe ar
 **Antibug Universe** — a universe with physical laws which make it impossible to construct the "bugged" states described above.
 {{ admonition_end() }}
 
-This is quite a fascinating solution to the problem at hand, but I question its feasibility from a theoretical standpoint. It seems that any such system could be clumsily simulated — and then broken —with a series of patches.
+This is quite a fascinating solution to the problem at hand, but I question its feasibility from a theoretical standpoint.
 
-The situation appears even more complex when viewed from a consciousness perspective, like conasanu numbers. From this viewpoint, there are myriad consciousnesses that perceive subjective experiences not governed by logic. For instance, they might strike a stone, but the stone remains unresponsive and doesn't reciprocate touch or pain. Or perhaps, sensory perceptions can be created where after a certain point all information is displayed a second later than to the original consciousness. Does consciousness then also need to follow anti-bug laws?
+The situation appears even more complex when viewed from a consciousness perspective, in conasanu. From this viewpoint, there are myriad consciousnesses that perceive subjective experiences not governed by logic. For instance, they might strike a stone, but the stone remains unresponsive and doesn't reciprocate touch or pain. Or perhaps, sensory perceptions can be created where after a certain point all information is displayed a second later than to the original consciousness. Does consciousness then also need to follow anti-bug laws?
 
 {{ admonition_start(color="orange", title="🔢 Mathematical Problem") }}
 Is it possible to construct a simulation describing an antibug universe, and do our current laws of physics and our consciousness adhere to this universe class?
@@ -1021,7 +1021,7 @@ If applying probabilities to universes is not senseless, then from unasanu postu
 
 ## Changing physical laws
 
-It's always possible to construct a universe where our current moment in time is the initial condition but with slightly different physical laws. For example, the speed of light could be a bit faster or slower (as far as it can be programmed according to the laws of physics and mechanics of matter). If such alterations impair the functioning of our consciousness, this change in the laws of physics gets subjected to anthropic filtering, which is why we shouldn't observe it. However, just as with universes with bugs, if applying probabilities to universes isn't pointless, then <span class="green2-bg example">we should witness a continuous random change in the laws of physics that doesn't disrupt our consciousness' functionality</span>.
+It's always possible to construct a universe where our current moment in time is the initial condition but with slightly different physical laws. For example, the speed of light could be a bit faster or slower (as far as it can be programmed according to the laws of physics and mechanics of matter). If such alterations impair the functioning of our consciousness, this change in the laws of physics gets subjected to anthropic filtration, which is why we shouldn't observe it. However, just as with universes with bugs, if applying probabilities to universes isn't pointless, then <span class="green2-bg example">we should witness a continuous random change in the laws of physics that doesn't disrupt our consciousness' functionality</span>.
 
 Could this be quantum mechanics? Could any simulation with living organisms eventually converge to something similar?
 
@@ -1031,7 +1031,7 @@ If applying probabilities to universes isn't absurd, and if such modifications a
 
 ## The death of all humans upon digital habitation
 
-How might this work? Imagine humans inventing computers operating solely on neutrons. These computers would not need the physical laws relating to charges. Meanwhile, human brain function requires electrical charges. Due to anthropic filtering, a human would typically observe a universe where their built computer operates (since they debugged it while alive). When someone transitions into a computer, their existence would no longer require electrical charges, and they might observe a shift in the laws of physics towards more randomness, excluding the need for electric charges (again due to anthropic filtering). So, after moving into the computer, the consciousness inside might observe that all animals, plants, and humans die instantly.
+How might this work? Imagine humans inventing computers operating solely on neutrons. These computers would not need the physical laws relating to charges. Meanwhile, human brain function requires electrical charges. Due to anthropic filtration, a human would typically observe a universe where their built computer operates (since they debugged it while alive). When someone transitions into a computer, their existence would no longer require electrical charges, and they might observe a shift in the laws of physics towards more randomness, excluding the need for electric charges (again due to anthropic filtration). So, after moving into the computer, the consciousness inside might observe that all animals, plants, and humans die instantly.
 
 The image below depicts the original universe where consciousness is uploaded into a computer. It also presents 4 potential scenarios that could follow (people or computers perish in different combinations) given that the initial universe is being simulated by all the laws of physics. Each square represents a possible outcome, a set of potential universes, and a comment on them.
 
@@ -1043,13 +1043,13 @@ Returning to the question of "probability of ending up in a certain universe": t
 
 The difficulty lies in determining how exactly to calculate the probabilities of specific universes and how different approaches to resolve this issue can be validated or refuted. This problem is a longstanding one, often applied to the many-worlds interpretation of quantum mechanics: it is unclear how to determine the likelihood of specific classes of universes when there are infinitely many of them. This issue makes me quite dubious about the concept of "some universe being more likely than another".
 
-As an example, consider the simplest question: what percentage of even numbers are odd?
+As an example, consider the simplest question: what percentage of numbers are odd?
 * If you count in this order: **1**, 2, **3**, 4, **5**, ..., you will find half are odd.
 * But if you're counting in the order: **1**, 2, 4, **3**, 6, 8, **5**, ..., you'll find only a third are odd. Here, the numbers are simply arranged in a different order, with two even numbers between two odd ones. The infinite quantity of both classes is preserved.
 
 While we agree that the natural order of half being odd is correct, it remains unknown how to choose this natural order for encoding the universe and whether it can be objectively determined.
 
-There is yet another objection to probabilities, specifically in relation to universes: <span class="green2-bg example">"any experience must be tested"</span>. No matter how improbable your universe may seem, someone has to exist within it and experience life, even in defiance of any understandings of probability. A suitable analogy can be made: the chance of me being born Chinese is rather substantial, yet I am not Chinese.
+There is yet another objection to probabilities, specifically in relation to universes: <span class="green2-bg example">"any experience must be experienced"</span>. No matter how improbable your universe may seem, someone has to exist within it and experience life, even in defiance of any understandings of probability. A suitable analogy can be made: the chance of me being born Chinese is rather substantial, yet I am not Chinese.
 
 Even if we manage to solve the measure problem and can obtain probabilities of a particular universe, it's unclear if it's possible to falsify or verify it, even with an infinite number of calculations that allow us to go through all universes and calculate the needed probabilities. Thus, the idea of "the probability of being in a certain universe" may be nothing more than an interpretation that has no real impact.
 
