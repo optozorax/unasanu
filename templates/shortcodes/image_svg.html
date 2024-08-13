@@ -1,0 +1,19 @@
+{% import "scale_macros.html" as macros %}
+
+{% if scale is not defined %}
+    {% set_global scale = "1" %}
+{% endif %}
+{% set class = macros::frac_to_class(frac=scale) %}
+
+<div class="magnifier-container {{class}}">
+<img
+    class="not-default full-screen-img"
+    src="{{path}}" 
+    style="border-radius: 0px;"
+    onclick="full_screen('{{path}}')"
+    onauxclick="full_screen_new_page('{{path}}')">
+<div class="magnifier-display">
+<img class="magnifier" src="/ico/magnifier.svg">
+<div class="magnifier-info">svg</div>
+</div>
+</div>

@@ -9,6 +9,7 @@ tags = []
 [extra]
 image = "thumbnail.png"
 language = "English"
+translation = "Translated using Claude 3.5 Sonnet + review from author"
 language_flag = "english.png"
 toc_text = "Table of contents"
 minutes_text = "min"
@@ -74,28 +75,34 @@ The Game of Life is not actually a game or life, but a cellular automaton. I nee
 This automaton works according to the following rules:
 * There is a two-dimensional infinite (or finite, closed on itself) field of square cells.
 
-{{ image(path="../ru/game_of_life_infinite_grid.png", scale="2/3") }}
+{{ image(path="../img/game_of_life_infinite_grid.png", scale="2/3") }}
 
 * Each cell can be empty or filled.
 * In this automaton, there is a flow of time, and it is provided by calculating the next moment of time from the previous one based on certain rules.
 * There is an initial moment of time, and from it, we iteratively calculate future moments.
 
-{{ image(path="../ru/game_of_life_time.png") }}
+{{ image(path="../img/game_of_life_time.png") }}
 
 * The neighbors of a cell are considered to be four direct neighbors and four diagonal neighbors.
 
-{{ image(path="game_of_life_neighbors.png", scale="1/2") }}
+{{ image_svg(path="game_of_life_neighbors.drawio.svg", scale="1/2") }}
 
 * The calculations consist of changing the state of cells based on their neighbors according to the following rules:
     * If a cell was empty, it becomes filled if and only if three of its neighbors were filled in the previous step, otherwise it remains empty.
     * If a cell was filled, it remains so if and only if two or three of its neighbors were filled in the previous step, otherwise it becomes empty.
 * These rules are denoted as B3/S23 (Born 3 / Survive 2 or 3).
 
-{{ image(path="game_of_life_rules.png", scale="2/3") }}
+{{ image_svg(path="game_of_life_rules.drawio.svg", scale="2/3") }}
 
 In the following interactive visualization, you can see how this cellular automaton develops for a random distribution of filled and empty cells:
 
-{{ game_of_life_en() }}
+{{ game_of_life(
+    start_stop="Start/Stop",
+    step="Step",
+    empty="Empty",
+    random="Random",
+    glider="Glider"
+) }}
 
 You can play with more advanced simulators yourself, for example on `conwaylife.com` [\[10\]].
 
@@ -108,36 +115,36 @@ The first example is the glider from the visualization above. This mechanism mov
 You can also make a generator of such gliders:
 
 {{ figure_start() }}
-<img src="../ru/glider_gun.gif" width="250" height="180">
+<img src="../img/glider_gun.gif" width="250" height="180">
 {{ figure_end(caption="Gosper's Glider Gun.") }}
 
 ---
 
 The Game of Life cellular automaton is Turing-complete, meaning a computer or Turing machine can be built on it. Here's an example (source with interactive simulation [\[11\]]):
 
-{{ image(path="../ru/game_of_life_turing_machine.png", scale="2/3") }}
+{{ image(path="../img/game_of_life_turing_machine.png", scale="2/3") }}
 
 ---
 
 In the interactive visualization `oimo.io/works/life` [\[12\]] (works on phones too), the Game of Life is simulated on itself both inwards, infinitely small, and upwards, infinitely large:
 
-{{ image(path="../ru/game_of_life_on_itself.png", scale="2/3") }}
+{{ image(path="../img/game_of_life_on_itself.png", scale="2/3") }}
 
 ---
 
 John von Neumann invented a cellular automaton and a mechanism in it that can self-reproduce. The image below shows how the second automaton has almost finished building the third; the lines going to the right are genetic information that is copied along with the body of the machines.
 
-{{ image(path="../ru/von_neumann.png", scale="2/3") }}
+{{ image(path="../img/von_neumann.png", scale="2/3") }}
 
 ---
 
 Tim Hutton [\[13\]] developed an artificial chemistry in which he designed such elements and interactions between them to assemble an artificial cell capable of reproduction:
 
-{{ video(path="../ru/chemistry.mp4", scale="2/3") }}
+{{ video(path="../img/chemistry.mp4", scale="2/3") }}
 
 This is not a cellular automaton, but it easily fits into such framework, and the author continues to develop this idea in the form of a cellular automaton [\[14\]]:
 
-{{ image(path="../ru/chemistry_automata.png", scale="2/3") }}
+{{ image(path="../img/chemistry_automata.png", scale="2/3") }}
 
 ---
 
@@ -189,10 +196,10 @@ Two types of spaces are known: continuum and discrete space.
 
 {{ container_start() }}
 {{ figure_start() }}
-{{ image(path="../ru/continuous2.png", scale="2/3") }}
+{{ image(path="../img/continuous2.png", scale="2/3") }}
 {{ figure_end(caption="Example of a continuum") }}
 {{ figure_start() }}
-{{ image(path="../ru/discrete2.png", scale="2/3") }}
+{{ image(path="../img/discrete2.png", scale="2/3") }}
 {{ figure_end(caption="Example of a discrete space") }}
 {{ container_end() }}
 
@@ -290,7 +297,7 @@ Then let's specify exactly what we have to say that this is proof that they live
 
 Let's say we made this simulation, got all the data and recorded it on a large hard drive: first the algorithm, then step 1, then step 2, ..., step N. Now we have proof that they lived up to step N. But the data on the hard drive is always some sequence of zeros and ones. We can take and write the data from the hard drive in the form of one very large natural number. And this natural number is still proof of the life of these beings.
 
-{{ image(path="number.png", scale="2/3") }}
+{{ image_svg(path="number.drawio.svg", scale="2/3") }}
 
 Now an interesting point: as we know, all natural numbers exist.
 
@@ -328,7 +335,15 @@ One might object: where do calculations come from if we just have numbers? After
 
 There is another similar point. If the universe can be calculated by the current laws of physics, why isn't it calculated by other laws of physics? In fact, it is, and according to unasanu, such worlds exist. Let's take the Game of Life as an example. The following illustration shows how the same field is calculated by different rules:
 
-{{ game_of_life_all_rules_en() }}
+{{ game_of_life_all_rules(
+    start_stop="Start/Stop",
+    step="Step",
+    random_rules="Random rules",
+    copy_from_original="Copy from B3/S23",
+    random="Random field",
+    glider="Glider",
+    glider_gun="Glider gun"
+) }}
 
 Try clicking "Start" and pressing the "Copy from B3/S23" button once a second. You will see that any state from B3/S23 can be calculated by any other rules, and this exists within unasanu.
 
@@ -446,7 +461,7 @@ Therefore, the **mathematical universe hypothesis** [\[1\]] by Max Tegmark enter
 
 It is known for certain that all naive simulations are a subset of mathematical structures, as the result of a program's work defines an abstract entity, and the program itself defines the relationship between these entities. It is also known for certain that the set of mathematical structures includes universes for which calculations can be used to verify that their space-time regions satisfy their own laws. Therefore, in such a concept, calculations are needed not to observe the world (calculate its steps), but to verify that some world satisfies its own laws, or to specify it.
 
-{{ image(path="structure.png", scale="2/3") }}
+{{ image_svg(path="structure.drawio.svg", scale="2/3") }}
 
 Probably, such a description is not very clear, so I want to show an example of a universe that appears to be computed naively, but in fact is not. An explicit example: time travel with the impossibility of changing the past. I know two good examples of this: Harry Potter books and the movie "Tenet". Imagine how you would simulate a world where time travel is possible, but it's done in such a way that the past remains unchanged? You need to simulate the past taking into account the future, and the future taking into account the past, and they must fit each other. We don't have ways to compute universes with such laws of time travel yet, so here the only possible option is to iterate through all possible worlds (with all possible futures and pasts) and check which of them satisfy the necessary laws. That is, the whole world can be computed only in the format of "all time at once". But beings in such a world obviously feel that they are living and are amazed by their time travel laws. You can read more about this in the article "Causal universes" [\[20\]].
 
@@ -483,7 +498,7 @@ Here, "construct" means that we'll take some program like "11D Ultra Atom Editor
 Is it possible to create an exact universe of The Lord of the Rings in a similar way? With a very high probability — **no**. To begin with, the laws of physics for such a universe should be roughly the same as ours, with some modifications for the presence of magic, but it's not a given that such laws of physics can be found. Furthermore, we would want such a world to arise on its own, like ours, with the Big Bang, evolution, and so on. This is another huge constraint that will hinder finding such a universe. Then we want the plot to be fully repeated in this universe. Maybe even for all living beings to look like in the movie. In general, all these constraints will eventually look like a huge system of equations for the initial state of the universe. And as we know, not all systems of equations have solutions. Simply because, if we plot their graphs, they will not intersect. As in the following example:
 
 {{ figure_start() }}
-{{ image(path="../ru/rings.png", scale="2/3") }}
+{{ image(path="../img/rings.png", scale="2/3") }}
 {{ figure_end(caption="Two different conditions") }}
 
 Here, each point is a universe, and the graph shows a universe satisfying one condition. The universe of The Lord of the Rings consists of many conditions, so this universe must be the intersection of all graphs of all conditions.
@@ -491,7 +506,7 @@ Here, each point is a universe, and the graph shows a universe satisfying one co
 But there are points that are closest to all of these conditions:
 
 {{ figure_start() }}
-{{ image(path="rings2.png", scale="2/3") }}
+{{ image_svg(path="rings2.drawio.svg", scale="2/3") }}
 {{ figure_end(caption="A universe sufficiently close to all conditions") }}
 
 <!-- https://www.desmos.com/calculator/aasywp7i1k -->
@@ -532,7 +547,7 @@ I think this is one of the most powerful properties of computations. The result 
 {{ details_start(summary="Yes, I'm quoting xkcd") }}
 The image is clickable.
 {{ figure_start() }}
-{{ image(path="a_bunch_of_rocks.png", format="png", scale="1") }}
+{{ image(path="../img/xkcd_505_en.png", format="png", scale="1") }}
 {{ figure_end(caption="xkcd/505 [\[23\]](https://xkcd.com/505)") }}
 {{ details_end() }}
 
@@ -562,13 +577,13 @@ It can be shown that for simulations existing in the form of numbers, infinite m
 
 First, how is infinite time achieved? If we do not limit the existence of the next step in any way in the simulation code, that is, for any current step there is always a next one, then for any number encoding steps from 1 to N, you can always construct a number encoding steps from 1 to N + 1. Consequently, time is not limited here in any way, and the universe in the form of a simulation can exist infinitely.
 
-{{ image(path="next_step.png", scale="2/3") }}
+{{ image_svg(path="next_step.drawio.svg", scale="2/3") }}
 
 Due to the infinity of time, one can make the computation speed as large as desired, simply by pausing the consciousness observing the computations.
 
 Infinite memory is a bit more complex. Suppose that by memory we mean the length of the number encoding the current step. For example, we have code written in such a way that the algorithm checks whether the previous step belongs to the current one. Then, when we request memory, we find the next number, and the algorithm checks if this number is what we need. When there is not enough memory, the algorithm can reject the number encoding this simulation. When there is as much memory as needed, the algorithm accepts it. Then, no matter how much memory we request, there will always be a number that contains the required amount of memory.
 
-{{ image(path="memory.png", scale="2/3") }}
+{{ image_svg(path="memory.drawio.svg", scale="2/3") }}
 
 Therefore, it would be more correct to say that you can request as much memory as you want, but each time a finite amount.
 
@@ -602,7 +617,7 @@ This simulation method is similar to limits from mathematical analysis: each par
 **Limit transition simulation method** is a method by which we can simulate universes that possess something infinite by constantly increasing the finite size of this potentially infinite quantity.
 {{ admonition_end() }}
 
-{{ image(path="inf_universe.png", scale="2/3") }}
+{{ image_svg(path="inf_universe.drawio.svg", scale="2/3") }}
 
 ## Simulating the continuum
 
@@ -615,29 +630,29 @@ Regarding physical simulation methods, there's the finite element method (FEM) [
 * We divide the space into some grid.
 
 {{ figure_start() }}
-{{ image(path="../ru/Example_of_2D_mesh.png", format="png", scale="1/2") }}
+{{ image(path="../img/Example_of_2D_mesh.png", format="png", scale="1/2") }}
 {{ figure_end(caption="Example of a grid. It can be any shape, but triangular is much more efficient from a practical point of view. You can divide everything into a square grid, it will just be more resource-intensive and slightly less accurate. Illustration from Wikipedia.") }}
 
 * We assume that each vertex of this grid contains the true value of heat, and between vertices, the heat uniformly transitions from one grid value to another. Thus, we obtained a continuum of heat values, but this continuum is represented by a discrete number of **finite elements**.
 
 {{ figure_start() }}
-{{ image(path="../ru/Finite_element_method_1D_illustration2.png", format="png", scale="1/2") }}
+{{ image(path="../img/Finite_element_method_1D_illustration2.png", format="png", scale="1/2") }}
 {{ figure_end(caption="Example of values within the grid. If there's a specific value at each vertex, and it uniformly decreases between grid elements (blue), then the sum of all these elements will give such a piecewise function, which is an approximation of the true function (red). Illustration from Wikipedia.") }}
 
 * Each such finite element can be written as a simple equation, and if we substitute this equation into the differential heat equation, we can obtain a system of linear algebraic equations (SLAE) for the entire space, which are easily solved and for which many methods have been developed.
 
 {{ figure_start() }}
-{{ image(path="../ru/Finite_element_sparse_matrix.png", format="png", scale="1/2") }}
+{{ image(path="../img/Finite_element_sparse_matrix.png", format="png", scale="1/2") }}
 {{ figure_end(caption="Example of the resulting SLAE matrix. Here, a white dot indicates that the SLAE element is zero, and a black dot indicates that it has some value. Special methods have been devised to solve SLAE on such sparse matrices. In practical problems, the sizes of such matrices can reach millions. Illustration from Wikipedia.") }}
 
 * After solving the SLAE, we get the heat value at each point in space at the next moment in time. This won't be an ideal solution, but it's accurate enough. And its property is that the finer we make the grid, the more accurate it will be.
 
 {{ figure_start() }}
-{{ image(path="../ru/FEM_example_of_2D_solution.png", format="png", scale="1/2") }}
+{{ image(path="../img/FEM_example_of_2D_solution.png", format="png", scale="1/2") }}
 {{ figure_end(caption="This is what the solution looks like for the triangular grid shown earlier. It's not even noticeable that the problem was solved with such large triangles as in the picture above, and that's because FEM is good enough, and active developments are being made to get the highest accuracy of the solution for the least amount of computation. Illustration from Wikipedia.") }}
 
 {{ figure_start() }}
-{{ image(path="../ru/FAE_visualization.jpg", format="jpg", scale="1/2") }}
+{{ image(path="../img/FAE_visualization.jpg", format="jpg", scale="1/2") }}
 {{ figure_end(caption="Example of another simulation using FEM. Illustration from Wikipedia.") }}
 
 Is it possible to simulate our universe using FEM? Quite possibly. The only question that arises is about the accuracy of calculations. We can choose a grid size, say, 1000 times smaller than the Planck length, and it seems that this should be sufficient to observe our world.
@@ -694,7 +709,7 @@ Let's assume we have some deterministic universe with a single random number gen
 
 Yes, to simulate a universe with absolute randomness, we need to simulate not one universe, but simultaneously all possible variants. Since we have no restrictions on memory or the number of calculations, this isn't a problem. Max Tegmark calls this "subjective randomness", and I took this idea from his book [\[18\]].
 
-{{ image(path="rng.png", scale="1/2") }}
+{{ image_svg(path="rng.drawio.svg", scale="1/2") }}
 
 This is a very interesting method, let's introduce a term for it.
 
@@ -726,7 +741,7 @@ Let's assume we have a deterministic universe with a single device for solving t
 
 The interesting thing here is that only one of all the resulting parallel universes is correct, but it's impossible for us to compute which one. In other words, in one of these universes, its inhabitants observe that their universe can solve the halting problem correctly. But, it seems to me, just as we are unable to understand which of these universes is correct, they can't be sufficiently certain about it either.
 
-{{ image(path="halting_problem.png", scale="1/2") }}
+{{ image_svg(path="halting_problem.drawio.svg", scale="1/2") }}
 
 So even if in our laws of physics or laws of consciousness functioning there is a phenomenon capable of solving the halting problem, it can still exist as a computer program.
 
@@ -820,7 +835,7 @@ If a universe is computable, then any of its subsystems is also computable and c
 **Conasanu** (consciousness as a number) is a philosophical concept suggesting that any consciousness with any input data is already computed and exists as a number, and it doesn't require any universe to exist.
 {{ admonition_end() }}
 
-{{ image(path="conasanu.png", scale="2/3") }}
+{{ image_svg(path="conasanu.drawio.svg", scale="2/3") }}
 
 It might seem that solipsism should triumph, but not quite. Solipsism claims that external reality doesn't exist. However, according to unasanu, everything that can be constructed exists. If your observations are much easier to describe by a program simulating an external universe, then that's how it is. Solipsism remains valid in that we can't be certain of anything except our own sensations, and it's a miracle that our sensations describe some external physical universe.
 
@@ -903,7 +918,7 @@ I suggest officially recognizing this work as the first to create real (but smal
 
 {{ admonition_start(color="blue3", title="Telegram post from «I trained one model»/927 [\[32\]]") }}
 
-{{ image(path="../ru/generative_agents.png") }}
+{{ image(path="../img/generative_agents.png") }}
 
 An incredibly cool article, unlike anything I've seen before — **Generative Agents: Interactive Simulacra of Human Behavior**
 
@@ -1034,7 +1049,7 @@ How might this work? Imagine that people have invented computers that work exclu
 
 The image below shows the original universe where consciousness is uploaded into a computer, and four possible scenarios for further development of events (people or computers die in different combinations), provided that the original universe will be simulated by all laws of physics. Each square shows a possible variant, that is, some set of universes, and a comment on them.
 
-{{ image(path="death_in_computer.png") }}
+{{ image_svg(path="death_in_computer.drawio.svg") }}
 
 # Probabilities of universes, or the measure problem
 
@@ -1157,7 +1172,7 @@ Therefore, if you look at yourself from the point of view that you're already a 
 
 And if you claim that there will be no life after death, you'll be absolutely wrong, because after your death only your copies will continue to live, and they will all, without exception, understand that they were wrong, remembering this moment.
 
-{{ image(path="death.png", scale="1") }} 
+{{ image_svg(path="death.drawio.svg", scale="1") }} 
 
 But don't focus on the word "copy", because copies accurate to subatomic particles are originals.
 
@@ -1322,7 +1337,7 @@ Alien civilizations could have come to the same conclusions and instead of conqu
 
 Indeed, why try to live, die, extract resources, build Dyson spheres, fly to other stars for millennia, if you can personally create programmer's heaven where you are a god? Moreover, programming programmer's heaven and scanning consciousness into a computer may be easier than building an interstellar ship or a Dyson sphere.
 
-{{ image(path="fermi_meme.jpg", scale="1/2") }} 
+{{ image_svg(path="fermi_meme.drawio.svg", scale="1/2") }}
 
 ## Requirements for consciousness digitization developers
 
@@ -1379,7 +1394,7 @@ Here's another example that can be conveniently explained within the unasanu fra
 
 In [\[30\]], which criticizes the computability of consciousness, the following experiment is proposed: let's say we've learned to compute consciousness and created a robot with simulated consciousness. Then we do the following - we give it the opportunity to look at the color red. It felt something when it looked at it, and accordingly said so.
 
-{{ image(path="robot_red.png", scale="1/2") }}
+{{ image_svg(path="robot_red.drawio.svg", scale="1/2") }}
 
 Next, we repeat this experiment, but this time we record the input data in the program code, allowing the compiler to completely remove all branches for other situations, leaving only the necessary ones. As a result, nothing remains of the robot's program except for state changes, without any computations. Since the input data didn't change, and the computation of the robot's consciousness is completely deterministic, the experiment gives exactly the same result. That is, the second case turns out to be nothing more than a playback of the robot's feelings.
 

@@ -1,0 +1,39 @@
+﻿You are faced with the task of translating a large article from Russian into Spanish. You will be given a list of definitions and their translation to English (for reference, to select the best translation alternative), example translations to English for reference, and then the text itself for translation. Do not translate directly word-for-word, but try to write a text that is more natural for the English language. Try to reorganize words in a sencentce to sound more natural in a target language. Keep the original markup consisting of markdown and jinja templates. The texts are located between three backticks (the ` symbol). Output only translation in three backticks without notes or your comments. When I ask you to continue translation, please provide instructions about how to merge previous and the next message in English, because I don't know target language at all, like: "delete last from previous message, it's uncomplete, I will write it again correctly".
+
+List of definitions and their translation:
+```
+* вводимое определение -> introduced definition
+* вопрос к читателю -> a question to the reader
+* проверяемое утверждение -> verifiable statement
+* слабое место -> weak point
+* математическая проблема -> math problem
+* иллюзорная симуляция -> illusory simulation
+* физическая симуляция -> physical simulation
+* существование для самого себя -> existence for itself
+* антропная фильтрация -> anthropic filtration
+* наивная модель времени -> naive model of time
+* принцип конструирования -> construction principle
+* симуляция методом предельного перехода -> limit transition simulation method
+* симуляция методом полного перебора -> brute force simulation method
+* вычислительный редукционизм -> computational reductionism
+* панквалиа -> panqualia
+* метабог -> metagod
+* антибаг-вселенная -> antibug universe
+* программистский рай -> programmer's heaven
+```
+
+Translation examples:
+```
+* Может ли теоретически существовать бог и насколько он может быть всемогущ? -> Can God theoretically exist, and how omnipotent can it be?
+* Мне кажется, что при обсуждении этой темы возникает множество недопониманий, потому что люди редко разделяют эти две категории. -> I find this topic to cause a lot of misunderstanding, because people rarely distinguish these two categories. (Example of reorganization to sound more natural)
+* Если мы живём в физической симуляции, то нас это вполне устраивает, потому что сохраняется всё, что мы знаем про физику, эволюцию звёзд, эволюцию живых существ. -> If we are living in a physical simulation, then we are quite satisfied with it because everything we know about physics, the evolution of stars, and the evolution of living beings is preserved.
+* Утверждение «из того, что мы живём в симуляции, следует, что всё это нереально» бессмысленно в случае физической симуляции, потому что такая симуляция и есть реальность. -> The statement "if we live in a simulation, then everything is unreal" is meaningless in the case of physical simulation, because such a simulation is reality itself. (Example of reorganization to sound more natural)
+* {{ image(path="game_of_life_on_itself.png", scale="2/3") }} -> {{ image(path="game_of_life_on_itself.png", scale="2/3") }} (Example of conserving the markup)
+* Примеры физических симуляций: теория всего, игра «Жизнь» Джона Конвея [\[7\]], проект физики Стивена Вольфрама [\[8\]]. -> Examples of physical simulations include: the theory of everything, John Conway's Game of Life [\[7\]], and Stephen Wolfram's physics project [\[8\]]. (Example of conserving the markup)
+* ## Впечатляющие возможности -> ## Impressive capabilities (Example of avoiding "Title Case")
+```
+
+Text itself:
+```
+
+```

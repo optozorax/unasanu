@@ -1,0 +1,19 @@
+I have two folders: "ru" and "en". In each there are many svg files with identical names in both folders, except in "en" folder text is on English, and in "ru" folder text is in Russian.
+
+I want to translate text from these svg files to Espanol ("es" folder), Chinese ("cn" folder) and Hindi ("hi" folder) and create new svg files in each folder.
+
+I want to translate it using Claude 3.5 Sonnet, by prompting it in web-version (I do not have API key).
+
+Please write script that:
+* Finds each svg file
+* Takes all text from it from both russian and english, for GPT to use maximum context
+* Creates ONE prompt in special format for Claude to translate all texts to all target languages
+
+And also another script that:
+* Reads answer from Claude to previous prompt
+* Parses it to obtain all the translations in all target languages
+* Reads all svg files in "en" folder, replaces text and saves it in target folder for each language, except "en" and "ru" of course
+
+PLEASE do not join texts using space, they all can contain spaces and newlines (please escape them).
+
+Please note, that thery may be empty strings or strings with the same text.
