@@ -342,7 +342,7 @@ Hay otro punto similar. Si el universo se puede calcular según las leyes de la 
     copy_from_original="Copiar de B3/S23",
     random="Campo aleatorio",
     glider="Planeador",
-    glider_gun="Cañón de planeadores",
+    glider_gun="Cañón de planeadores"
 ) }}
 
 Intenta presionar "Inicio" y presionar el botón "Copiar con B3/S23" cada segundo. Verás que cualquier estado de B3/S23 se puede calcular con cualquier otra regla, y eso existe en el marco de unasanu.
