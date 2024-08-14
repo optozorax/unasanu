@@ -545,7 +545,7 @@ Unasanu отлично согласуется с антропным принци
 {{ details_start(summary="Да, я цитирую xkcd") }}
 Картинка кликабельна.
 {{ figure_start() }}
-{{ image_svg(path="505_v1.drawio.svg", format="png", scale="1") }}
+{{ image(path="505_v1.png", format="png", scale="1") }}
 {{ figure_end(caption="xkcd/505 [\[23\]](https://xkcd.ru/505/)") }}
 {{ details_end() }}
 
