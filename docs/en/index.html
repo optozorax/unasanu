@@ -123,7 +123,7 @@
 </td>
 <td style="padding-right: 10px; border-right: 0px solid #ffffff;">
 <h2 class="project-date" style="margin-top: 0px;">
-    <span class="post-date" style="font-style: normal">| 🕑 139 min</span>
+    <span class="post-date" style="font-style: normal">| 🕑 140 min</span>
 </h2>
 </td>
 
@@ -368,7 +368,7 @@
 <p>But this automaton also has differences from our physics:</p>
 <ul>
 <li>There are no conservation laws (for example, the number of cells), but for lovers of such laws, cellular automata with conservation laws can be found.</li>
-<li>Time can only be simulated forward (not backward), because there can be from 0 to infinity past moments of time. This is not necessarily a property of our physics; our physics may be reversible (and reversible automata also exist).</li>
+<li>Time can only be simulated forward (not backward), because there can be from 0 to infinity past moments of time. This is not necessarily a property of our physics; our physics may be reversible (and reversible automata also exist — I explored Critters in <a href="https://optozorax.github.io/en/p/critters/">my article on reversible cellular automata</a>).</li>
 </ul>
 <p>Further, it will be assumed that our physics at its very foundation <em>is something like a cellular automaton</em> (with big assumptions, but in my defense, I will explore this topic further). That is, the properties described above apply to it.</p>
 <p>And even if our physics is not like a cellular automaton, it's a good starting point because understanding exactly how it differs is also good.</p>
@@ -649,6 +649,7 @@
 </div>
 </div>
 <p>Probably, such a description is not very clear, so I want to show an example of a universe that appears to be computed naively, but in fact is not. An explicit example: time travel with the impossibility of changing the past. I know two good examples of this: Harry Potter books and the movie &quot;Tenet&quot;. Imagine how you would simulate a world where time travel is possible, but it's done in such a way that the past remains unchanged? You need to simulate the past taking into account the future, and the future taking into account the past, and they must fit each other. We don't have ways to compute universes with such laws of time travel yet, so here the only possible option is to iterate through all possible worlds (with all possible futures and pasts) and check which of them satisfy the necessary laws. That is, the whole world can be computed only in the format of &quot;all time at once&quot;. But beings in such a world obviously feel that they are living and are amazed by their time travel laws. You can read more about this in the article &quot;Causal universes&quot; <a href="https://www.lesswrong.com/posts/o5F2p3krzT4JgzqQc/causal-universes">[20]</a>.</p>
+<p>I describe my experiment with two directions of time in <a href="https://optozorax.github.io/en/p/the-tenet-of-life/">my article about a cellular automaton inspired by Tenet</a>.</p>
 <p>By the way, there is an article titled &quot;The Universe is not a Computer&quot; <a href="https://arxiv.org/pdf/1211.7081.pdf">[21]</a>, which suggests looking at the way of describing physics differently and offers an approach for computing &quot;all time at once&quot;.</p>
 <p>Another example of a non-naive universe is our universe with the theory of relativity. We don't have a single global time. In each part of space, time flows at a different speed. Therefore, the entire universe should be represented as a space-time block, where time is just a relationship between parts of this block.</p>
 <p>In both of these examples, universes can be approximated by local naivety. For the first universe, we neglect time travel, and for the second, we neglect time dilation. Because of this, I will continue to reason in terms of naive simulations further, because it's simpler and it approximates well a multitude of possible types of such universes, if not all of them. But this could also be a mistake.</p>
