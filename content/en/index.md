@@ -166,7 +166,7 @@ The Game of Life automaton has many interesting properties:
 
 But this automaton also has differences from our physics:
 * There are no conservation laws (for example, the number of cells), but for lovers of such laws, cellular automata with conservation laws can be found.
-* Time can only be simulated forward (not backward), because there can be from 0 to infinity past moments of time. This is not necessarily a property of our physics; our physics may be reversible (and reversible automata also exist).
+* Time can only be simulated forward (not backward), because there can be from 0 to infinity past moments of time. This is not necessarily a property of our physics; our physics may be reversible (and reversible automata also exist — I explored Critters in [my article on reversible cellular automata](https://optozorax.github.io/en/p/critters/)).
 
 Further, it will be assumed that our physics at its very foundation _is something like a cellular automaton_ (with big assumptions, but in my defense, I will explore this topic further). That is, the properties described above apply to it.
 
@@ -464,6 +464,8 @@ It is known for certain that all naive simulations are a subset of mathematical 
 {{ image_svg(path="structure.drawio.svg", scale="2/3") }}
 
 Probably, such a description is not very clear, so I want to show an example of a universe that appears to be computed naively, but in fact is not. An explicit example: time travel with the impossibility of changing the past. I know two good examples of this: Harry Potter books and the movie "Tenet". Imagine how you would simulate a world where time travel is possible, but it's done in such a way that the past remains unchanged? You need to simulate the past taking into account the future, and the future taking into account the past, and they must fit each other. We don't have ways to compute universes with such laws of time travel yet, so here the only possible option is to iterate through all possible worlds (with all possible futures and pasts) and check which of them satisfy the necessary laws. That is, the whole world can be computed only in the format of "all time at once". But beings in such a world obviously feel that they are living and are amazed by their time travel laws. You can read more about this in the article "Causal universes" [\[20\]].
+
+I describe my experiment with two directions of time in [my article about a cellular automaton inspired by Tenet](https://optozorax.github.io/en/p/the-tenet-of-life/).
 
 By the way, there is an article titled "The Universe is not a Computer" [\[21\]], which suggests looking at the way of describing physics differently and offers an approach for computing "all time at once".
 
