@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {# -------------------------------------------------------------------------------------------------------- #}
-{% block social_metatags %}
+{% block extra_head %}
 {% set image = section.permalink ~ section.extra.image %}
 <meta name="author" content="{{config.extra.author}}">
 <meta name="title" content="{{section.title}}">
@@ -23,8 +23,8 @@
 <meta name="twitter:title" content="{{section.title}}">
 <meta name="twitter:description" content="{{section.description}}">
 <meta name="twitter:image" content="{{image|safe}}">
-<meta name="twitter:creator" content="{{config.extra.twitter_creator_username}}">
-{% endblock social_metatags %}
+<meta name="twitter:creator" content="{{config.extra.author}}">
+{% endblock extra_head %}
 
 {# -------------------------------------------------------------------------------------------------------- #}
 {% block page_header %}
